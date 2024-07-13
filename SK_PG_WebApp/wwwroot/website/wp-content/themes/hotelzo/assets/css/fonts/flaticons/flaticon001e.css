@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("flaticonb537.ttf?391de7a39782ce24b330a067dbeaee47") format("truetype"),
+url("flaticonb537.woff?391de7a39782ce24b330a067dbeaee47") format("woff"),
+url("flaticonb537.woff2?391de7a39782ce24b330a067dbeaee47") format("woff2"),
+url("flaticonb537.eot?391de7a39782ce24b330a067dbeaee47#iefix") format("embedded-opentype"),
+url("flaticonb537.svg?391de7a39782ce24b330a067dbeaee47#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-hotel-cart:before {
+    content: "\f101";
+}
+.flaticon-hotel:before {
+    content: "\f102";
+}
+.flaticon-cocktail:before {
+    content: "\f103";
+}
+.flaticon-reception-bell:before {
+    content: "\f104";
+}
+.flaticon-room:before {
+    content: "\f105";
+}
+.flaticon-room-service:before {
+    content: "\f106";
+}
+.flaticon-room-service-1:before {
+    content: "\f107";
+}
+.flaticon-five-stars:before {
+    content: "\f108";
+}
+.flaticon-receptionist:before {
+    content: "\f109";
+}
+.flaticon-amenities:before {
+    content: "\f10a";
+}
+.flaticon-room-service-2:before {
+    content: "\f10b";
+}
+.flaticon-bathtub:before {
+    content: "\f10c";
+}
+.flaticon-booking:before {
+    content: "\f10d";
+}
+.flaticon-smart-city:before {
+    content: "\f10e";
+}
+.flaticon-lamp:before {
+    content: "\f10f";
+}
+.flaticon-bellboy:before {
+    content: "\f110";
+}
+.flaticon-terrace:before {
+    content: "\f111";
+}
+.flaticon-parking:before {
+    content: "\f112";
+}
+.flaticon-safe-box:before {
+    content: "\f113";
+}
+.flaticon-foot-massage:before {
+    content: "\f114";
+}
+.flaticon-breakfast:before {
+    content: "\f115";
+}
+.flaticon-weights:before {
+    content: "\f116";
+}
+.flaticon-alarm-clock:before {
+    content: "\f117";
+}
+.flaticon-wifi-router:before {
+    content: "\f118";
+}
+.flaticon-coffee:before {
+    content: "\f119";
+}
+.flaticon-alcoholic-drink:before {
+    content: "\f11a";
+}
+.flaticon-customer-service:before {
+    content: "\f11b";
+}
+.flaticon-lobby:before {
+    content: "\f11c";
+}
+.flaticon-tv:before {
+    content: "\f11d";
+}
+.flaticon-single-bed:before {
+    content: "\f11e";
+}
+.flaticon-pool:before {
+    content: "\f11f";
+}
+.flaticon-hotel-1:before {
+    content: "\f120";
+}
+.flaticon-booked:before {
+    content: "\f121";
+}
+.flaticon-hotel-bed:before {
+    content: "\f122";
+}
+.flaticon-living-room:before {
+    content: "\f123";
+}
+.flaticon-towel:before {
+    content: "\f124";
+}
+.flaticon-mini:before {
+    content: "\f125";
+}
+.flaticon-swimming-pool:before {
+    content: "\f126";
+}
+.flaticon-gym-equipment:before {
+    content: "\f127";
+}
+.flaticon-bags:before {
+    content: "\f128";
+}
+.flaticon-room-service-3:before {
+    content: "\f129";
+}

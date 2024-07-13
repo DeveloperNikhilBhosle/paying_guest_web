@@ -1,0 +1,79 @@
+﻿@model IEnumerable<SK_PG_WebApp.Models.BusinessModels.AdminPropertyMappingBO>
+
+@{
+    ViewData["Title"] = "PgAdminPropertyMapping";
+    Layout = "~/Views/Shared/_LayoutUI2.cshtml";
+}
+
+
+
+ <div class="card" style="margin:10px">
+              <div class="card-header">
+                <h3 class="card-title">PGAdmin Property Mapping</h3>
+              </div>
+
+                  <form class="form-horizontal" enctype="multipart/form-data" method="post">
+                  <div class="row" style="margin:10px">
+
+                      <div class="col-lg-4">
+                                <div class="form-group">
+                                  <label>New Property</label>
+                                  @Html.DropDownList("property",(IEnumerable<SelectListItem>)ViewBag.PGDropdown , new { 
+                                                             @class = "form-control", @id = "property", @name = "property" 
+                                                               
+                                                         })  
+
+
+
+                                </div>
+                      </div>
+                      <div class="col-lg-4">
+                          <input type="number" style="display:none" name="userId" value="@ViewBag.userId" />
+                      </div>
+                      <div class="col-lg-4">
+                          <button class="btn-success" type="submit"> <i class="fas fa-save"></i> Save </button>
+                      </div>
+                  </div>
+                  </form>
+                   
+
+          
+
+
+                <div class="row" style="margin:10px">
+                    @foreach(var items in ViewBag.PropertyList)
+        {
+             
+             @*<a class="btn btn-app bg-secondary">
+                 
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                  
+                  @items.name
+                </a>*@
+
+                <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-info">
+                   <i class="fa fa-building" aria-hidden="true"></i>
+                  </span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">@items.Deposit</span>
+                
+
+                <a asp-controller="User" asp-action="PgAdminPropertyRemoveMapping" asp-route-property="@items.roomNo" asp-route-userId="@ViewBag.userId" class="nav-link">
+                       <span class="float-right badge bg-danger">Un-Map</span>
+                    </a>
+
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+        }
+                </div>
+        
+       
+               
+              </div>
+ 

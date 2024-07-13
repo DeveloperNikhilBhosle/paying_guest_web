@@ -1,0 +1,63 @@
+﻿@model SK_PG_WebApp.Models.DynamicModels.ViewRoomBookingDC
+
+@{
+    ViewData["Title"] = "ViewRoomBooking";
+    Layout = "~/Views/Shared/_LayoutUI2.cshtml";
+}
+
+
+
+<div class="timeline" style="margin:20px">
+    @foreach(var item in ViewBag.Data)
+    {
+            <div class="time-label" >
+                <span style="background:skyblue !important" class="bg-red">Room No : @item.name</span>
+              </div>
+                      <div>
+                <i class="fa fa-home bg-blue"></i> 
+                <div class="timeline-item">
+                  <span class="time"> Room Id :  @item.roomId</span>
+                  <h3 class="timeline-header"><a href="#">Deposit : @item.depositAmount </a> Rent :   @item.rentAmount </h3>
+
+                  <div class="timeline-body">
+                      <div class="row">
+                    @foreach(var items in @item.pgDetails)
+                    {
+                        
+                            <div class="col-md-3">
+                        <div class="info-box bg-info" style="background: @items.backgroundColour !important">
+                          @*<span class="info-box-icon"><i class="fa fa-user"></i></span>*@
+
+                          <div class="info-box-content">
+                            <span class="info-box-text"> @items.name </span>
+                            <span class="info-box-number">Contact No : @items.whatsAppNumber</span>
+
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                            <span class="progress-description">
+                             <h6>
+                                 Next Renew Date: @items.nextRenewDate
+                             </h6> 
+                            </span>
+                          </div>
+                          <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
+                      </div>
+                     
+                         
+                    }
+                       </div>
+
+                     
+                  </div>
+                @*  <div class="timeline-footer">
+                    <a class="btn btn-primary btn-sm">Read more</a>
+                    <a class="btn btn-danger btn-sm">Delete</a>
+                  </div>*@
+                </div>
+              </div>
+    }
+
+</div>

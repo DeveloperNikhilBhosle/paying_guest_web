@@ -1,0 +1,187 @@
+﻿@model SK_PG_WebApp.Models.DynamicModels.EditPropertyDC
+
+@{
+    ViewData["Title"] = "AddProperty";
+    Layout = "~/Views/Shared/_LayoutUI2.cshtml";
+}
+
+ <div class="col-sm-6" style="margin:10px">
+     
+   <h6>Add PG Location</h6>
+          </div>
+          
+
+
+     <form method="post" asp-action="AddUpdateProperty">
+      <div class="row" style="margin:10px">
+     
+        <div class="col-md-6">
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Property Details</h3>
+        
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+
+                
+              <div class="form-group">
+                <label for="inputName">Property Name</label>
+                <input type="text" id="inputName" asp-for="propertyName" value="@ViewBag.propertyName" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="inputDescription">Description</label>
+                <textarea id="inputDescription" class="form-control" value="@ViewBag.propertyDescription" name="propertyDescription" asp-for="propertyDescription" rows="4"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="inputStatus">State</label>
+                <input type="text" id="state" readonly asp-for="state" value="@ViewBag.state" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="inputStatus">City</label>
+                <input type="text" id="city" readonly asp-for="city" value="@ViewBag.city" class="form-control" />
+
+              </div>
+              <div class="form-group">
+                <label for="inputStatus">Location</label>
+                <input type="text" id="location" readonly asp-for="location" value="@ViewBag.location" class="form-control" />
+              </div>
+              
+
+            
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <div class="col-md-6"> 
+          <div class="card card-secondary">
+            <div class="card-header">
+              <h3 class="card-title">Property Owner Details</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              
+              <div class="form-group">
+                <label for="inputSpentBudget">Full Name</label>
+                <input type="text" id="inputSpentBudget" asp-for="fullName" class="form-control" value="@ViewBag.fullName" step="1">
+              </div>
+              <div class="form-group">
+                <label for="inputEstimatedDuration">Contact Number</label>
+                <input type="number" id="inputEstimatedDuration" asp-for="contactNumber" class="form-control" value="@ViewBag.contactNumber" step="0.1">
+              </div>
+              <div class="form-group">
+                <label for="inputSpentBudget">Permanent Address</label>
+                <textarea id="inputSpentBudget" class="form-control" asp-for="address" name="address" value="@ViewBag.address" step="1">
+                    
+                </textarea>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+          
+          <!-- /.card -->
+        </div>
+
+              
+
+      </div>
+      </form>
+      <div class="row" style="margin:10px">
+   
+        <div class="col-lg-12"> 
+         
+          <!-- /.card -->
+          <div class="card card-info">
+            <div class="card-header">
+              <h3 class="card-title">Map / UnMap Rooms</h3>
+
+              <div class="card-tools">
+             @*   <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                  <i class="fas fa-minus"></i>
+                </button>*@
+                   <a type="button" class="btn btn-info" style="display:@ViewBag.isAddButtonVisible"
+                   asp-area="" asp-controller="Property" asp-action="AddPGRoom" asp-route-id="@ViewBag.propertyId" 
+                   title="add">
+                  Add
+                </a>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <table class="table table-responsive">
+                <thead>
+                  <tr>
+                    <th>Room No</th>
+                    <th>Allocated To</th>
+                    <th>PG Capacity</th>
+                    <th>Booked</th>
+                    <th>Available</th>
+                    <th>Deposit</th>
+                    <th>Rent</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                            @foreach(var items in ViewBag.Data)
+                            {
+                                <tr style="background : @items.backgroundColour">
+                                  <td>@items.name</td>
+                                  <td>@items.allocatedTo</td>
+                                  <td>@items.pgCapacity</td>
+                                  <td>@items.activePG</td>
+                                  <td>@items.availablePG</td>
+                                  <td>@items.depositAmount</td>
+                                  <td>@items.RentAmount</td>
+                                  <td>
+                                      <a type="button" class="btn btn-info" 
+                                        asp-area="" asp-controller="Property" asp-action="EditPGRoom" asp-route-id="@items.id" 
+                                        title="add">
+                                        View Or Edit
+                                      </a>
+                                  </td>
+                                </tr>
+                            }
+                            
+
+                  </tbody>
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+
+
+      <div class="row" style="margin:10px">
+        <div class="col-12">
+          <a type="button" title="Cancel" asp-area="" asp-controller="Property" asp-action="PropertyDashboard"
+          class="btn btn-secondary">Go To Property Dashboard</a>
+          <input type="submit" value="Save Changes" class="btn btn-success float-right">
+        </div>
+      </div>
+      
+    <script>
+        function onCickAddButton(){
+          
+            alert("Hello");
+
+            var data = @ViewBag.AddRooms;
+            console.log(data, "data");
+            var newData = data[0];
+            console.log(newData, "newData");
+           
+        }
+
+    </script>

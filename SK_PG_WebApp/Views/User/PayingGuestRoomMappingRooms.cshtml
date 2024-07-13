@@ -1,0 +1,138 @@
+﻿@model SK_PG_WebApp.Models.DynamicModels.MapPGToRoomDC
+
+@{
+    ViewData["Title"] = "PayingGuestRoomMappingRoom";
+    Layout = "~/Views/Shared/_LayoutUI2.cshtml";
+}
+
+
+
+         <div class="row" style="margin:20px">
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-info"><i class="fa fa-user"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Paying Guest</span>
+                <span class="info-box-number">@Model.name</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-success"><i class="fa fa-map-marker"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">City</span>
+                <span class="info-box-number">@Model.city</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-warning"><i class="fa fa-map-marker"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Location</span>
+                <span class="info-box-number">@Model.location</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span class="info-box-icon bg-danger"><i class="fa fa-home"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Property</span>
+                <span class="info-box-number">@Model.property</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+
+
+
+
+    <div class="card" style="margin:20px">
+              <div class="card-header">
+                <h3 class="card-title">Available Rooms</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-responsive">
+                  <thead>
+                    <tr>
+                      <th style="width: 10px">Room No</th>
+                      <th>Room No / Name </th>
+                      <th>Allocated To </th>
+                      <th>PG Capacity </th>
+                      <th>Deposit</th>
+                      <th>Rent </th>
+                      <th style="width: 40px">Availability</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                @foreach(var item in Model.pgRoomDetails)
+                {
+                    <tr style="background: @item.backgroundColour">
+                      <td>@item.roomId</td>
+                      <td>@item.roomName</td>
+                      <td>@item.allocatedTo</td>
+                      <td>@item.capacity</td>
+                      <td>@item.deposit</td>
+                      <td>@item.rent</td>
+                     
+                      <td><span class="badge bg-info"> @item.availability  %</span></td>
+                      <td >
+                        @*<span class="badge bg-info btn btn-small" style="display:@item.isAvailable"> <i class="fa fa-envelope"></i> Save </span>*@
+                  @*      <span class="badge bg-info">   <i class="fa fa-eye"></i>     View </span>*@
+                        
+                 @* @Html.Raw(@Url.Action("PayingGuestRoomMappingRooms", "User", new { @userId = @Model.userId, @propertyId = @Model.propertyId}));
+*@
+                   @*<a asp-area="" asp-controller="User" asp-action="PayingGuestRoomMappingRoomsPost" class="badge bg-info btn btn-small">
+                        <i class="fa fa-envelope"></i> Save
+                    </a>
+*@
+                            @if(@item.availability > 0)
+                            {
+                                @Html.ActionLink("Save", "PayingGuestRoomMappingRoomsPost", new { userId = @Model.userId, propertyId = @item.roomId }
+                                    , new {@class = "badge bg-info btn btn-small"})
+                            }
+                            else{
+
+                                <h6><b>Bed Not Available</b> </h6>
+                                }
+
+                         
+                      </td>
+                    </tr>
+                }
+                
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+          @*    <div class="card-footer clearfix">
+                <ul class="pagination pagination-sm m-0 float-right">
+                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                </ul>
+              </div>*@
+            </div>

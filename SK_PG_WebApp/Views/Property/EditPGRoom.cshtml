@@ -1,0 +1,99 @@
+﻿@model SK_PG_WebApp.Models.BusinessModels.PGRoomMasterBO
+
+@{
+    ViewData["Title"] = "AddPGRoom";
+    Layout = "~/Views/Shared/_LayoutUI2.cshtml";
+}
+
+
+        <div class="card card-default" style="margin:10px">
+                <div class="row" style="margin:10px">
+        <div class="col-md-12">
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">PG Room</h3>
+        
+              
+            </div>
+            <div class="card-body" style="background: @ViewBag.Data.backgroundColour" id="bgColorBody">
+                <form method="post" asp-action="EditPGRoomPost">
+                <div class="row">
+                <input type="text" style="display:none" asp-for="pgMasterId" value="@ViewBag.Data.pgMasterId" class="form-control" />
+                <input type="text" style="display:none" asp-for="id" value="@ViewBag.Data.id" class="form-control" />
+
+              
+              <div class="form-group col-md-4">
+                <label for="inputName">Room Name / Room No</label>
+                <input type="text" readonly id="inputName" asp-for="name" value="@ViewBag.Data.name" class="form-control" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputDescription">No Of Halls</label>
+                <input type="text" required id="inputDescription" class="form-control" asp-for="noOfHall" value="@ViewBag.Data.noOfHall" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputStatus">No Of Bedroom</label>
+                <input type="text" required id="state"  asp-for="noOfBedroom" value="@ViewBag.Data.noOfBedroom" class="form-control" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputStatus">No Of Kitchen</label>
+                <input type="text" required id="city"  asp-for="noOfKitchen" value="@ViewBag.Data.noOfKitchen" class="form-control" />
+
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputStatus">PG Capacity</label>
+                <input type="text" required id="location"  asp-for="pgCapacity" value="@ViewBag.Data.pgCapacity" class="form-control" />
+              </div>
+              
+              <div class="form-group col-md-4">
+                <label for="inputStatus">Booked</label>
+                <input type="text" required id="location"  asp-for="activePG" value="@ViewBag.Data.activePG" class="form-control" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputStatus">Available</label>
+                <input type="text" required id="location"  asp-for="availablePG" value="@ViewBag.Data.availablePG" class="form-control" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputStatus">Notice Before Leaving PG (Months)</label>
+                <input type="number" required id="location"  asp-for="noticePeriodMonths" value="@ViewBag.Data.noticePeriodMonths" class="form-control" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputStatus">Notice Before Leaving PG (Days)</label>
+                <input type="number" required id="location"  asp-for="noticePeriodDays" value="@ViewBag.Data.noticePeriodDays" class="form-control" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputStatus">Deposit</label>
+                <input type="number" required id="location"  asp-for="depositAmount" value="@ViewBag.Data.depositAmount" class="form-control" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputStatus">Rent</label>
+                <input type="number" required id="location"  asp-for="RentAmount" value="@ViewBag.Data.RentAmount" class="form-control" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputStatus">Allocated To</label>
+                 @Html.DropDownList("ddlPGAllocatedTo",(IEnumerable<SelectListItem>)ViewBag.PGAllocatdTo , new { 
+                      @class = "form-control", @id = "pgAllocatedTo", @name = "pgAllocatedTo" 
+                       
+                  })             
+              </div>
+              <div class="col-md-4">
+
+                    <input type="button" style="margin-left:10px" value="Cancel" class="btn btn-warning float-right">
+                    <input type="submit" style="margin-left:10px" value="Save Changes" class="btn btn-success float-right">
+               </div>
+             
+
+                </div>
+             </form> 
+              
+            
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+   
+      </div>
+        </div>
+
+
+               

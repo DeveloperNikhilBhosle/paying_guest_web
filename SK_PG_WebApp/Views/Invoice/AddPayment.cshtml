@@ -1,0 +1,357 @@
+﻿@model IEnumerable<SK_PG_WebApp.Models.DynamicModels.UserProfileDC>
+@{
+    ViewData["Title"] = "Add Payment";
+    Layout= "_LayoutUI2";
+}
+
+        <div class="card card-default" style="margin:10px">
+          <div class="card-header">
+            <h3 class="card-title">Sk PG Payment</h3>
+
+           @* <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                <i class="fas fa-minus"></i>
+              </button>
+             
+            </div>*@
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+
+
+               <div class="row" style="display:@ViewBag.First">
+              
+               
+               <form style="width:100%">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Select Paying Guest</label>
+                            @Html.DropDownList("ddlPG",(IEnumerable<SelectListItem>)ViewBag.PG , new { @class = "form-control ddlPG", @id = "ddlPG", @name = "ddlPG" })
+                        </div>
+                         <div class="form-group">
+                             <label>Payment Type</label>
+                            @Html.DropDownList("ddlPT",(IEnumerable<SelectListItem>)ViewBag.PaymentType, new { @class = "form-control", @id = "ddlPT", @name = "ddlPT" })
+
+                </div>
+                    </div>
+                     <div class="col-md-6">
+                          <button type="submit" class="btn btn-success">View Payment Details</button>
+                        </div>
+               </form>
+              
+
+
+            <!-- /.row -->
+          </div>
+
+            <div class="row" style="display:@ViewBag.Second">
+
+                <form style="width:100%" method="post">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                             <div class="form-group">
+                              <label>Paying Guest</label>
+                                    <input type="text" readonly class="form-control" name="payingGuest" value="@ViewBag.payingGuest" >
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                              <label>Pay To</label>
+                               <input type="text" readonly class="form-control" name="PayTo" value="@ViewBag.PayTo" >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                             <div class="form-group">
+                               <label>Payment Type</label>
+                               <input type="text" readonly class="form-control" name="payentType" value="@ViewBag.payentTypeLabel" >
+
+                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                             <div class="form-group">
+                               <label>Pay For / Room </label>
+                                <textarea type="text" readonly class="form-control" name="payFor" value="@ViewBag.PayForRoom" > @ViewBag.PayForRoom </textarea>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                              <label>Pay On</label>
+                             <div class="input-group date" id="reservationdatetime" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" name="payOn" data-target="#reservationdatetime"/>
+                                    <div class="input-group-append" data-target="#reservationdatetime" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                 <label>Payment Date Range</label>
+                                <div class="input-group">
+                                   <div class="input-group-prepend">
+                                     <span class="input-group-text">
+                                       <i class="far fa-calendar-alt"></i>
+                                     </span>
+                                   </div>
+                                   <input type="text" class="form-control float-right" name="dateRange" id="reservation">
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                               <label>Amount</label>
+                               <input type="number" class="form-control" name="amount" value="@ViewBag.Amount" >
+                             
+                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                              <label>Discount</label>
+                              <input type="number" class="form-control" name="discount" value="@ViewBag.Discount" >
+                            
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-lg-6">
+                             <div class="form-group">
+                              <label>Payment Gateway</label>
+                               
+                               @Html.DropDownList("ddlPayGateway",(IEnumerable<SelectListItem>)ViewBag.PaymentGateway, new { @class = "form-control"
+                               ,@name="ddlPayGateway", @id="ddlPayGateway"})
+                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                             <div class="form-group">
+                               <label>Payment Gateway Details</label>
+                               <input type="text" class="form-control" name="payGatewayDetails" value="" >
+
+                             </div>
+                        </div>
+                        <div class="col-md-6">
+                          <button type="submit" class="btn btn-success">Add Payment</button>
+                        </div>
+
+                            <input name="ddlPT" value="@ViewBag.ddlPT" style="display:none" />
+                            <input name="payToId" value="@ViewBag.PayToId" style="display:none" />
+                            <input name="ddlPG" value="@ViewBag.ddlPG"  style="display:none" />
+                    </div>
+
+              
+              
+              </form>
+            <!-- /.row -->
+
+            <!-- /.row -->
+          </div>
+
+
+          <div class=" row">
+                      <div class="row" style="width:100%; display:@ViewBag.Third ">
+         @* <div class="col-lg-12">
+            <div class="info-box bg-success">
+              <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Payment Success</span>
+         
+                <span class="info-box-text">Type Of Payment : @ViewBag.payentTypeLabel </span>
+                <span class="info-box-text">Pay As On : </span>
+                <span class="info-box-text">Date Range : @ViewBag.PayForRoom </span>
+                <span class="info-box-number">Amount : @ViewBag.Amount </span>
+                <span class="info-box-number">Discout : @ViewBag.Discount </span>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <span class="progress-description">
+                  from : @ViewBag.payingGuest 
+                </span>
+                <span class="progress-description">
+                  To : @ViewBag.PayTo
+                </span>
+                <span class="progress-description">
+                  Payment Gateway : @ViewBag.ddlPG
+                </span>
+                <span class="progress-description">
+                  Payment Details : @ViewBag.ddlPT
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>*@
+
+          <div class="col-lg-12">
+
+
+                    @foreach(var item in ViewBag.ItemList)
+                    {
+                        <div class="col-lg-12">
+            <!-- Widget: user widget style 1 -->
+            <div class="card card-widget widget-user">
+              <!-- Add the bg color to the header using any of the bg-* classes -->
+              <div class="widget-user-header bg-info">
+
+                  <div class="row">
+                      <div class="col-lg-6">
+                          from : @item.fromUserName
+                      </div>
+                      <div class="col-lg-6">
+                          To : @item.toUsername
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-6">
+                          Payment Gateway : @item.paymentGateway
+                      </div>
+                      <div class="col-lg-6">
+                          Payment Details : @item.paymentDetails
+                      </div>
+                  </div>
+
+
+             @*   <h3 class="widget-user-username">from : @ViewBag.payingGuest </h3>
+                <h5 class="widget-user-desc">To : @ViewBag.PayTo</h5>
+                <h6 class="widget-user-desc">Payment Gateway : @ViewBag.ddlPG</h6>
+                <h6 class="widget-user-desc">Payment Details : @ViewBag.ddlPT</h6>*@
+                <h6 class="widget-user-desc">Date Range : @item.dateRange</h6>
+              </div>
+             @* <div class="widget-user-image">
+                <img class="img-circle elevation-2" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+              </div>*@
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-sm-3 border-right">
+                    <div class="description-block">
+                      <h5 class="description-header"> @item.paymentType </h5>
+                      <span class="description-text">Type of Payment</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-sm-3 border-right">
+                    <div class="description-block">
+                      <h5 class="description-header">@item.amount</h5>
+                      <span class="description-text">Amount</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-sm-3">
+                    <div class="description-block">
+                      <h5 class="description-header">@item.discount</h5>
+                      <span class="description-text">Discont</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="description-block">
+                      <h5 class="description-header" style="color:yellowgreen"><b>@item.status</b></h5>
+                      <span class="description-text">Status</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+            </div>
+            <!-- /.widget-user -->
+          </div>
+                    }
+
+                
+          </div>
+                <div class="col-md-6">
+                          @*<button type="submit" class="btn btn-success">Generate Invoice</button>*@
+
+                          <a class="btn btn-app" style="color:white; background:orange" asp-action="AddPayment">
+                  <i class="fas fa-pause"></i> Add another Payment
+                </a>
+
+                <a class="btn btn-app" style="color:white; background:yellowgreen" asp-action="GenerateInvoice" asp-route-userId="@ViewBag.userId" target="_blank">
+                  <span class="badge bg-teal"></span>
+                  <i class="fas fa-inbox"></i> Generate Invoice
+                </a>
+
+                        </div>
+                       
+          </div>
+        </div>
+          <!-- /.card-body -->
+         
+        </div>
+
+       @* <div class=" row">
+                      <div class="row" style="display:@ViewBag.Third">
+                 <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box bg-success">
+              <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Likes</span>
+                <span class="info-box-number">41,410</span>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                  70% Increase in 30 Days
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          </div>
+        </div>*@
+
+
+
+
+<script type="text/javascript">
+    //function onPGSelect(){
+jQuery(document).ready(function() {
+
+
+    $(".ddlPG").change(function() {
+
+    debugger;
+    alert("PG Selected");
+
+    var firstDropVal = $('#ddlPG').val();
+    alert(firstDropVal);
+
+    $.ajax({
+        type: "POST",
+        url: "<%= Url.Action("GetPGData") %>",
+        data: "{pgId:" + firstDropVal + "}", // pass in data usually
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function(data) {
+            // TODO work with this data
+            debugger;
+            alert(data);
+        }
+    });  });
+
+    $("#otherCatches").click(function() {
+        debugger;
+        alert("SUCCRESS");
+    
+});
+
+
+});
+</script>

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<SK_PG_WebApp.Models.BusinessModels.UsersBO>
+@{
+    ViewData["Title"] = "User List";
+    Layout= "_LayoutUI2";
+}
+
+ <section class="content">
+      <div class="card card-solid">
+        <div class="card-body pb-0">
+            <div class="row" style="display:@ViewBag.isEditOrCreate">
+                                 <a asp-area="" asp-controller="User" asp-action="AddNewUser" asp-route-id="@ViewBag.userId" class="dropdown-item dropdown-footer"
+                 style="    max-width: 150px;
+    background: darkseagreen;
+    border-radius: 10px;"
+                 >
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add New User </a>
+            </div>
+          <div class="row">
+              @foreach (var item in Model){
+            <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
+              <div class="card bg-light d-flex flex-fill">
+                <div class="card-header text-muted border-bottom-0">
+                  @item.designation
+                </div>
+                <div class="card-body pt-0">
+                    <div class="row">
+                        <h2 class="lead"><b>@item.name</b></h2>
+                    </div>
+                  <div class="row">
+                    
+                      
+                   
+                      <ul class="ml-4 mb-0 fa-ul text-muted">
+                          <li class="small"><span class="fa-li"><i class="fas fa-user"></i></span> About: @item.about </li>
+                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: @item.address</li>
+                        <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone #: @item.whatsAppNumber</li>
+                      </ul>
+                   
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="text-right">
+                    <a href="@item.password" style="display:@ViewBag.isEditOrCreate; margin-right:5px" target="_blank" class="btn btn-sm bg-teal">
+                      <i class="fas fa-comments" href=""></i>
+                    </a>
+                    <a style="display:@ViewBag.PropertyMapping; margin-right: 5px" asp-controller="User" asp-action="PgAdminPropertyMapping" asp-route-pgAdminId="@item.id" class="btn btn-sm bg-teal">
+                      <i class="fa fa-building" aria-hidden="true"></i>
+                    </a>
+                    <a  asp-controller="User" asp-action="UserProfile" asp-route-id="@item.id" class="btn btn-sm btn-primary">
+                      <i class="fas fa-user"></i> View Profile
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            }
+              </div>
+              </div>
+              </div>
+              
+    </section>

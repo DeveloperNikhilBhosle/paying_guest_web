@@ -1,0 +1,130 @@
+﻿@model IEnumerable<SK_PG_WebApp.Models.BusinessModels.PGMasterBO>
+@{
+    ViewData["Title"] = "Property Dashboard";
+    Layout= "_LayoutUI2";
+}
+
+
+    <section class="content" style="margin:10px">
+
+      <!-- Default box -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Property Detail</h3>
+
+          <div class="card-tools">
+       @*     <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>*@
+             <a class="btn btn-sm btn-primary" asp-action="PropertyDashboard" >
+             Back to Dashboard
+            </a>
+          @*  <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+              <i class="fas fa-times"></i>
+            </button>*@
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-8 order-2 order-md-1">
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="info-box bg-light">
+                    <a  class="div info-box-content" asp-action="PayingGuest" asp-controller="User" asp-route-id="" >
+                      <span class="info-box-text text-center text-muted">Total Tenant</span>
+                      <span class="info-box-number text-center text-muted mb-0">@ViewBag.Details.totalTenant</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="info-box bg-light">
+                    <a class="info-box-content" asp-action="NoticeFromTenant" asp-controller="User" asp-route-propertyId="@ViewBag.propertyId">
+                      <span class="info-box-text text-center text-muted">Notice from Tenant</span>
+                      <span class="info-box-number text-center text-muted mb-0">@ViewBag.Details.totalNP</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="info-box bg-light">
+                    <a class="info-box-content" asp-action="InvoiceDashboard" asp-controller="Invoice" asp-route-propertyId="@ViewBag.propertyId">
+                      <span class="info-box-text text-center text-muted">Total Payment Collection</span>
+                      <span class="info-box-number text-center text-muted mb-0">@ViewBag.Details.totalPaymentCollection</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+               <h4>Property Floors</h4>
+              <div class="row">
+                 
+                             @foreach(var items in ViewBag.FloorData)
+                                {
+                                    <div class="col-12 col-sm-4">
+                                      <div class="info-box">
+                                        <span style="background-color:@items.background !important" class="info-box-icon bg-info"><i class="fa fa-home"></i></span>
+
+                                        <div class="info-box-content">
+                                          <span class="info-box-text">Floar : @items.name</span>
+                                          <span class="info-box-number">Total Tenant : @items.totalPG</span>
+                                          <span class="info-box-number">Total Rooms : @items.totalRooms</span>
+                                            <a asp-controller="Property" style="display: @items.visibilityRemoveButton" asp-action="RemoveFloor" asp-route-floorId="@items.id" asp-route-propertyId="@ViewBag.Details.propertyId" class="nav-link">
+                                               <span class="float-right badge bg-danger">Remove</span>
+                                            </a>
+                                              <a asp-controller="User" asp-action="ViewRoomBooking" asp-route-id="@items.id" class="nav-link">
+                                               <span class="float-right badge bg-primary">View Tenant</span>
+                                            </a>
+
+                                        </div>
+                                        <!-- /.info-box-content -->
+                                      </div>
+                                      <!-- /.info-box -->
+                                    </div>
+                                }
+
+                   
+
+                </div>
+            
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 order-1 order-md-2">
+              <h3 class="text-primary"><i class="fa fa-building"></i> @ViewBag.Details.name</h3>
+              <p class="text-muted">@ViewBag.Details.description</p>
+              <br>
+              <div class="text-muted">
+                <p class="text-sm">@ViewBag.Details.owner
+                  <b class="d-block">Owner </b>
+                </p>
+                <p class="text-sm">@ViewBag.Details.ownerNumber
+                  <b class="d-block">Owner Contact</b>
+                </p>
+              </div>
+
+          @*    <h5 class="mt-5 text-muted">Project files</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" class="btn-link text-secondary"><i class="far fa-fw fa-file-word"></i> Functional-requirements.docx</a>
+                </li>
+                <li>
+                  <a href="" class="btn-link text-secondary"><i class="far fa-fw fa-file-pdf"></i> UAT.pdf</a>
+                </li>
+                <li>
+                  <a href="" class="btn-link text-secondary"><i class="far fa-fw fa-envelope"></i> Email-from-flatbal.mln</a>
+                </li>
+                <li>
+                  <a href="" class="btn-link text-secondary"><i class="far fa-fw fa-image "></i> Logo.png</a>
+                </li>
+                <li>
+                  <a href="" class="btn-link text-secondary"><i class="far fa-fw fa-file-word"></i> Contract-10_12_2014.docx</a>
+                </li>
+              </ul>*@
+              <div class="text-center mt-5 mb-3">
+                <a asp-action="AddPropertyFloor" asp-route-propertyId="@ViewBag.Details.propertyId" class="btn btn-sm btn-primary">Add New Floor</a>
+                <a href="#" class="btn btn-sm btn-warning">Request to Deactivate Property</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+
+    </section>

@@ -1,0 +1,2445 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en-US" class="no-js no-svg">
+
+<!-- Mirrored from hotelzo.peacefulqode.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Aug 2022 07:24:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="shortcut icon" href="/website/wp-content/themes/hotelzo/assets/img/favicon.ico" />
+    <title>Hotelzo &#8211; Luxury Hotel WordPress Theme</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Hotelzo &raquo; Feed" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Hotelzo &raquo; Comments Feed" href="comments/feed/index.html" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/hotelzo.peacefulqode.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='/website/wp-includes/css/dist/block-library/style.min37ad.css?ver=6.0.1' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<style id='extendify-gutenberg-patterns-and-templates-utilities-inline-css'>
+
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='/website/wp-content/plugins/contact-form-7/includes/css/styles4c7e.css?ver=5.6.2' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='/website/wp-content/plugins/hotelzo-core/public/css/vendor/magnific-popup.min8a54.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='jquery.mCustomScrollbar-css'  href='/website/wp-content/plugins/hotelzo-core/public/css/vendor/jquery.mCustomScrollbar.min8a54.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='owl.carousel-css'  href='/website/wp-content/plugins/hotelzo-core/public/css/vendor/owl.carousel.min8a54.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='progressbar-css'  href='/website/wp-content/plugins/hotelzo-core/public/css/vendor/progressbar8a54.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='hotelzo-css'  href='/website/wp-content/plugins/hotelzo-core/public/css/style8a54.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='/website/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min91ce.css?ver=5.16.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='/website/wp-content/plugins/elementor/assets/css/frontend.minf43b.css?ver=3.7.1' media='all' />
+<link rel='stylesheet' id='elementor-post-6-css'  href='/website/wp-content/uploads/elementor/css/post-6008a.css?ver=1660798345' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css'  href='/website/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.minf43b.css?ver=3.7.1' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='/website/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.minf43b.css?ver=3.7.1' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='/website/wp-content/uploads/elementor/css/global904f.css?ver=1660798375' media='all' />
+<link rel='stylesheet' id='elementor-post-36-css'  href='/website/wp-content/uploads/elementor/css/post-365f31.css?ver=1660798346' media='all' />
+<link rel='stylesheet' id='hotelzo-fonts-css'  href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;family=Jost:wght@100;200;300;400;500;600&amp;subset=latin%2Clatin-ext&amp;display=swap' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='/website/wp-content/themes/hotelzo/assets/css/bootstrap.mina352.css?ver=4.1.3' media='all' />
+<link rel='stylesheet' id='animate-min-css'  href='/website/wp-content/themes/hotelzo/assets/css/animate.mincce7.css?ver=4.0.0' media='all' />
+<link rel='stylesheet' id='hotelzo-style-css'  href='/website/wp-content/themes/hotelzo/assets/css/style5152.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='hotelzo-responsive-css'  href='/website/wp-content/themes/hotelzo/assets/css/responsive5152.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='/website/wp-content/themes/hotelzo/assets/css/font-awesome/css/fontawesome.min05c8.css?ver=5.13.0' media='all' />
+<link rel='stylesheet' id='flaticon-collection-css'  href='/website/wp-content/themes/hotelzo/assets/css/fonts/flaticons/flaticon001e.css?ver=2.0.0' media='all' />
+<link rel='stylesheet' id='ionicons-icons-css'  href='/website/wp-content/themes/hotelzo/assets/css/fonts/ionicons/ionicons.min001e.css?ver=2.0.0' media='all' />
+<link rel='stylesheet' id='themify-icons-css'  href='/website/wp-content/themes/hotelzo/assets/css/fonts/themify-icons/themify-icons001e.css?ver=2.0.0' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Cormorant+Garamond%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CJost%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.0.1' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css'  href='/website/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min52d5.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='/website/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min52d5.css?ver=5.15.3' media='all' />
+<script src='/website/wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='/website/wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src='/website/wp-content/plugins/hotelzo-core/public/js/vendor/asyncloader.min8a54.js?ver=1.0.0' id='asyncloader-js'></script>
+<script id='hotelzo-js-extra'>
+var PluginJsConfig = {"js_dependencies":{"asyncloader.js":"https:\/\/hotelzo.peacefulqode.com\/wp-content\/plugins\/hotelzo-core\/public\/\/js\/vendor\/asyncloader.js?ver=1.0","asyncloader":"https:\/\/hotelzo.peacefulqode.com\/wp-content\/plugins\/hotelzo-core\/public\/\/js\/vendor\/asyncloader.min.js?ver=1.0","circle-progress":"https:\/\/hotelzo.peacefulqode.com\/wp-content\/plugins\/hotelzo-core\/public\/\/js\/vendor\/circle-progress.min.js?ver=1.0","isotope.pkgd":"https:\/\/hotelzo.peacefulqode.com\/wp-content\/plugins\/hotelzo-core\/public\/\/js\/vendor\/isotope.pkgd.min.js?ver=1.0","jquery.countTo":"https:\/\/hotelzo.peacefulqode.com\/wp-content\/plugins\/hotelzo-core\/public\/\/js\/vendor\/jquery.countTo.min.js?ver=1.0","jquery.mCustomScrollbar":"https:\/\/hotelzo.peacefulqode.com\/wp-content\/plugins\/hotelzo-core\/public\/\/js\/vendor\/jquery.mCustomScrollbar.min.js?ver=1.0","jquery.magnific-popup":"https:\/\/hotelzo.peacefulqode.com\/wp-content\/plugins\/hotelzo-core\/public\/\/js\/vendor\/jquery.magnific-popup.min.js?ver=1.0","owl.carousel":"https:\/\/hotelzo.peacefulqode.com\/wp-content\/plugins\/hotelzo-core\/public\/\/js\/vendor\/owl.carousel.min.js?ver=1.0","progressbar.js":"https:\/\/hotelzo.peacefulqode.com\/wp-content\/plugins\/hotelzo-core\/public\/\/js\/vendor\/progressbar.js?ver=1.0"}};
+</script>
+<script src='/website/wp-content/plugins/hotelzo-core/public/js/script8a54.js?ver=1.0.0' id='hotelzo-js'></script>
+<script src='/website/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.minf43b.js?ver=3.7.1' id='font-awesome-4-shim-js'></script>
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/36.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/website/wp-includes/wlwmanifest.html" /> 
+<meta name="generator" content="WordPress 6.0.1" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed35a8.json?url=https%3A%2F%2Fhotelzo.peacefulqode.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed49c2?url=https%3A%2F%2Fhotelzo.peacefulqode.com%2F&amp;format=xml" />
+<meta name="generator" content="Redux 4.3.16" /><style id="hotelzo-custom-style-839a9">
+.content-area .site-main{
+padding:0 !important;;
+}
+
+
+.pt-breadcrumb{
+display:none !important;;
+}
+
+
+.pt-breadcrumb{
+background-image:url(/website/wp-content/uploads/2022/08/2.png)!important;
+}
+
+</style><style id="hotelzo-custom-style-8e194">
+footer#pt-footer:before{
+background-image:url(/website/wp-content/uploads/2022/08/1.png)!important;
+}
+
+</style><meta name="generator" content="Powered by Slider Revolution 6.5.25 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+</head>
+
+<body class="home page-template-default page page-id-36 hotelzo-front-page page-two-column elementor-default elementor-kit-6 elementor-page elementor-page-36">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>  <!-- loading -->
+                  <div id="pt-loading">
+                    <div id="pt-loading-center">
+                      
+                        <img src="/website/wp-content/uploads/2022/08/logo-2.png" alt="loading">
+                        
+                    </div>
+                </div>
+              
+<div id="page" class="site">
+  <a class="skip-link screen-reader-text" href="#content"></a>
+<div class="pt-background-overlay"></div>
+<div class="pt-sidebar">
+	<div class="pt-close-btn">
+		<a class="pt-close" href="javascript:void(0)">
+			<i class="ti-close"></i>
+		</a>
+	</div>
+	<div class="pt-sidebar-block mCustomScrollbar">
+		<div class="pt-sidebar-header">
+							<img src="/website/wp-content/uploads/2022/08/logo-2.png" class="pt-sidebar-logo" alt="hotelzo-sidebar-logo">
+					</div>
+		<div class="pt-sidebar-content">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#039;s standard.</p>
+						</div>
+
+		<div class="pt-sidebars">
+			
+		<div class="pt-widget-menu widget">
+
+			<h4 class="footer-title">Recent Posts</h4>
+			
+				<div class="pt-foote-recent-post">
+
+					<div class="pt-foote-recent-post-media">
+
+						<a href="richard-mcclintock-a-latin-professor-at-sydney-college/index.html">
+
+							<img src="/website/wp-content/uploads/2022/07/1-6-100x100.jpg" alt=""></a>
+
+						</div>
+
+						<div class="pt-foote-recent-post-info">
+
+							
+							<h6><a href="richard-mcclintock-a-latin-professor-at-sydney-college/index.html">Richard McClintock, a Latin professor at -Sydney College</a></h6>
+
+							<a href="2022/07/27/index.html" class="pt-post-date">July <span>27</span>, 2022 </a>
+
+						</div>
+
+
+
+					</div>
+
+					
+				<div class="pt-foote-recent-post">
+
+					<div class="pt-foote-recent-post-media">
+
+						<a href="contrary-to-popular-belief-em-ipsum-is-not-simply-random/index.html">
+
+							<img src="/website/wp-content/uploads/2022/07/2-5-100x100.jpg" alt=""></a>
+
+						</div>
+
+						<div class="pt-foote-recent-post-info">
+
+							
+							<h6><a href="contrary-to-popular-belief-em-ipsum-is-not-simply-random/index.html">Contrary to popular belief, em Ipsum is not simply random</a></h6>
+
+							<a href="2022/07/27/index.html" class="pt-post-date">July <span>27</span>, 2022 </a>
+
+						</div>
+
+
+
+					</div>
+
+					
+				<div class="pt-foote-recent-post">
+
+					<div class="pt-foote-recent-post-media">
+
+						<a href="more-or-less-normal-distri-bution-of-opposed-to-using/index.html">
+
+							<img src="/website/wp-content/uploads/2022/07/3-4-100x100.jpg" alt=""></a>
+
+						</div>
+
+						<div class="pt-foote-recent-post-info">
+
+							
+							<h6><a href="more-or-less-normal-distri-bution-of-opposed-to-using/index.html">more-or-less normal distri bution of , opposed to using</a></h6>
+
+							<a href="2022/07/27/index.html" class="pt-post-date">July <span>27</span>, 2022 </a>
+
+						</div>
+
+
+
+					</div>
+
+					
+			</div>
+
+					</div>
+
+		<div class="pt-sidebar-contact">
+			<ul class="pt-contact">
+
+				
+									<li>
+
+						<a href="tel:+1800001658"><i class="fa fa-phone"></i>
+							<span>+1800-001-658</span>
+						</a>
+					</li>
+				
+									<li>
+
+						<a href="mailto:Info@Peacefulthemes.Com"><i class="fa fa-envelope"></i><span>Info@Peacefulthemes.Com</span></a>
+					</li>
+				
+
+			</ul>
+
+		</div>
+
+		<div class="pt-sidebar-social">
+			<ul>
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+											<li><a href="#"><i class="fab fa-skype"></i></a></li>
+											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									</ul>
+			</div>
+		</div>
+	</div>
+	<header id="pt-header" class="pt-header-default ">	
+		<div class="pt-top-header">
+			<div class="container">
+				
+<div class="row flex-row-reverse">
+  <div class="col-md-6 text-right">
+    <div class="pt-header-social text-right">
+      <ul>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+
+                    <li><a href="#"><i class="fab fa-skype"></i></a></li>
+
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+
+                </ul>
+     </div>
+   </div>
+   <div class="col-md-6">
+     <div class="pt-header-contact ">
+      <ul>
+               <li>
+
+          <a href="tel:+1800001658"><i class="fas fa-phone"></i>
+           <span>+1800-001-658</span>
+         </a>
+       </li>
+                <li>
+
+        <a href="mailto:Info@Peacefulthemes.Com"><i class="fas fa-envelope"></i><span>Info@Peacefulthemes.Com</span></a>
+      </li>
+      </ul>
+</div>
+</div>
+
+
+
+</div>
+			</div>
+		</div>
+		<div class="pt-bottom-header pt-has-sticky">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<a class="navbar-brand" href="../index.html">
+								        <img class="img-fluid logo" src="/website//website/wp-content/themes/hotelzo/assets/img/logo.png" alt="hotelzo"> 
+         
+							</a>
+							
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
+																			<div id="pt-menu-contain" class="pt-menu-contain"><ul id="pt-main-menu" class="navbar-nav ml-auto"><li id="menu-item-712" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children dropdown menu-item-712"><a href="#">Home</a><i class="fa fa-chevron-down pt-submenu-icon"></i>
+<ul class="sub-menu">
+	<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-39"><a href="../index.html">Main Home</a></li>
+	<li id="menu-item-708" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-705 current_page_item menu-item-708"><a href="index.html" aria-current="page">Luxury Hotel</a></li>
+	<li id="menu-item-4570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4570"><a href="../summer-resort/index.html">Summer Resort</a></li>
+	<li id="menu-item-4569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4569"><a href="../classic-hotel/index.html">Classic Hotel</a></li>
+	<li id="menu-item-4783" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4783"><a href="../modern-hotel/index.html">Modern Hotel</a></li>
+	<li id="menu-item-4782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4782"><a href="../vacation-resorts/index.html">Vacation Resorts</a></li>
+</ul>
+</li>
+<li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-40"><a href="#">Pages</a><i class="fa fa-chevron-down pt-submenu-icon"></i>
+<ul class="sub-menu">
+	<li id="menu-item-2034" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2034"><a href="../about-us/index.html">About Us</a></li>
+	<li id="menu-item-2325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2325"><a href="../our-services/index.html">Our Services</a></li>
+	<li id="menu-item-2614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2614"><a href="../our-gallery/index.html">Our Gallery</a></li>
+	<li id="menu-item-2398" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2398"><a href="../activities/index.html">Our Activities</a></li>
+	<li id="menu-item-2440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2440"><a href="../special-offers/index.html">Special Offers</a></li>
+	<li id="menu-item-2482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2482"><a href="../guest-review/index.html">Guest Review</a></li>
+	<li id="menu-item-2656" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2656"><a href="../hotel-staff/index.html">Hotel Staff</a></li>
+	<li id="menu-item-2533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2533"><a href="../faq/index.html">FAQ</a></li>
+	<li id="menu-item-2603" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2603"><a href="../404.html">404 Error</a></li>
+</ul>
+</li>
+<li id="menu-item-2807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2807"><a href="../restaurant/index.html">Restaurant</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-42"><a href="#">Rooms</a><i class="fa fa-chevron-down pt-submenu-icon"></i>
+<ul class="sub-menu">
+	<li id="menu-item-3063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3063"><a href="../rooms-grid-style-1/index.html">Rooms – Grid Style 1</a></li>
+	<li id="menu-item-3174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3174"><a href="../rooms-grid-style-2/index.html">Rooms – Grid Style 2</a></li>
+	<li id="menu-item-3246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3246"><a href="../rooms-list/index.html">Rooms – List</a></li>
+	<li id="menu-item-4347" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4347"><a href="../room/luxury-room/index.html">Room Single</a></li>
+</ul>
+</li>
+<li id="menu-item-43" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-43"><a href="#">Blog</a><i class="fa fa-chevron-down pt-submenu-icon"></i>
+<ul class="sub-menu">
+	<li id="menu-item-2767" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2767"><a href="#">Grid Style</a><i class="fa fa-chevron-down pt-submenu-icon"></i>
+	<ul class="sub-menu">
+		<li id="menu-item-2773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2773"><a href="../1-column-blog/index.html">1 Column Blog</a></li>
+		<li id="menu-item-2996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2996"><a href="../2-column-blog/index.html">2 Column Blog</a></li>
+		<li id="menu-item-2995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2995"><a href="../3-column-blog/index.html">3 Column Blog</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2768" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2768"><a href="#">Blog Sidebar</a><i class="fa fa-chevron-down pt-submenu-icon"></i>
+	<ul class="sub-menu">
+		<li id="menu-item-2994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2994"><a href="../left-sidebar/index.html">Left Sidebar</a></li>
+		<li id="menu-item-2993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2993"><a href="../right-sidebar/index.html">Right Sidebar</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2769" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2769"><a href="../richard-mcclintock-a-latin-professor-at-sydney-college/index.html">Blog Single</a></li>
+</ul>
+</li>
+<li id="menu-item-2711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2711"><a href="../contact-us/index.html">Contact Us</a></li>
+</ul></div>																	</div>
+																		<div class="pt-btn-container">
+											
+											<a href="../rooms-grid-style-1/index.html" class="pt-button pt-button-flat">
+																								<span class="text">Book Now</span>
+											</a>
+
+										</div>
+																	
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<i class="fas fa-bars"></i>
+							</button>					
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+			</header>	
+				<div class="pt-breadcrumb">
+				   <div class="container">
+				      <div class="row align-items-center">
+				         <div class="col-lg-12">
+				            <nav aria-label="breadcrumb">
+				            	<div class="pt-breadcrumb-title">
+				            		<h1>
+				                  		Home			              		 	</h1>
+				            	</div>
+				               <div class="pt-breadcrumb-container">
+									<ol class="breadcrumb">
+		                 		 					               			</ol>
+				               </div>
+				            </nav>
+				         </div>
+				        
+				      </div>
+				   </div>
+				</div>
+			   
+<div class="peacefulthemes-contain"> 
+  <div class="site-content-contain">
+    <div id="content" class="site-content">
+<div class="peacefulthemes-contain-area">
+
+<div id="primary" class="content-area">
+
+	<main id="main" class="site-main">
+
+		<div class="container">
+
+			
+<article id="post-36" class="post-36 page type-page status-publish hentry">
+	
+	<div class="entry-content">
+				<div data-elementor-type="wp-page" data-elementor-id="36" class="elementor elementor-36">
+									<div class="elementor-section elementor-top-section elementor-element elementor-element-3b47dcb elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="3b47dcb" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d39bcfc" data-id="d39bcfc" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-fcea783 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="fcea783" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-579d191" data-id="579d191" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6b7c441 elementor-widget elementor-widget-slider_revolution" data-id="6b7c441" data-element_type="widget" data-widget_type="slider_revolution.default">
+				<div class="elementor-widget-container">
+			
+		<div class="wp-block-themepunch-revslider">
+			<!-- START Home REVOLUTION SLIDER 6.5.25 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_5_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+				<rs-module id="rev_slider_5_1" style="" data-version="6.5.25">
+					<rs-slides>
+						<rs-slide style="position: absolute;" data-key="rs-21" data-title="Slide" data-thumb="//hotelzo.peacefulqode.com//website/wp-content/uploads/2022/08/1-2-50x100.jpg" data-anim="ms:300;" data-in="o:0;" data-out="a:false;">
+							<img src="/website/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="1" width="1920" height="949" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//hotelzo.peacefulqode.com//website/wp-content/uploads/2022/08/1-2.jpg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-5-slide-21-layer-0" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-213px,-178px,-160px,-123px;y:m;yo:-190px,-157px,-119px,-80px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:45px,37px,28px,17px;h:1px;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:300;sp:1000;sR:300;"
+								data-frame_999="o:0;st:w;sR:7700;"
+								style="z-index:9;background-color:#ffffff;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-21-layer-1" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:-190px,-157px,-119px,-79px;"
+								data-text="w:normal;s:16,14,14,12;l:24,22,22,20;ls:4px,3px,2px,1px;fw:500;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:300;sp:1000;sR:300;"
+								data-frame_999="o:0;st:w;sR:7700;"
+								style="z-index:10;font-family:'Jost';text-transform:uppercase;"
+							>welcome to the smart hotel 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-21-layer-2" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:207px,173px,158px,120px;y:m;yo:-190px,-157px,-120px,-80px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:45px,37px,28px,17px;h:1px;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:300;sp:1000;sR:300;"
+								data-frame_999="o:0;st:w;sR:7700;"
+								style="z-index:8;background-color:#ffffff;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-21-layer-3" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:-86px,-72px,-37px,-22px;"
+								data-text="w:normal;s:72,59,48,32;l:80,60,56,40;fw:600;a:center;"
+								data-dim="w:867px,715px,567px,349px;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:800;sp:1000;sR:800;"
+								data-frame_999="o:0;st:w;sR:7200;"
+								style="z-index:11;font-family:'Cormorant Garamond';text-transform:capitalize;"
+							>Welcome to an oasis of luxury & tranquility 
+							</rs-layer><!--
+
+							--><a
+								id="slider-5-slide-21-layer-4" 
+								class="rs-layer pt-button pt-button-flat pt-white-border rev-btn"
+								href="about-us/index.html" target="_self"
+								data-type="button"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-90px,-95px,-73px,-63px;y:m;yo:67px,46px,79px,64px;"
+								data-text="w:normal;s:14,14,14,13;l:28,22,22,20;ls:3px,2px,1px,0px;fw:500;"
+								data-dim="minh:0px,none,none,none;"
+								data-padding="t:12,12,14,10;r:30,25,22,20;b:12,12,14,10;l:30,25,22,20;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:1200;sp:1000;sR:1200;"
+								data-frame_999="o:0;st:w;sR:6800;"
+								data-frame_hover="c:#19130b;bgc:#fff;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:13;background-color:#00a9ae;font-family:'Jost';text-transform:uppercase;"
+							><span class="text">read more</span> 
+							</a><!--
+
+							--><a
+								id="slider-5-slide-21-layer-5" 
+								class="rs-layer pt-button pt-button-flat pt-white-border rev-btn"
+								href="contact-us/index.html" target="_self"
+								data-type="button"
+								data-color="#19130b"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:106px,78px,87px,77px;y:m;yo:67px,46px,79px,64px;"
+								data-text="w:normal;s:14,14,14,13;l:28,22,22,20;ls:3px,2px,1px,0px;fw:500;"
+								data-dim="minh:0px,none,none,none;"
+								data-padding="t:12,12,14,10;r:30,25,22,20;b:12,12,14,10;l:30,25,22,20;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:1200;sp:1000;sR:1200;"
+								data-frame_999="o:0;st:w;sR:6800;"
+								data-frame_hover="c:#fff;bgc:#00a9ae;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:12;background-color:#ffffff;font-family:'Jost';text-transform:uppercase;"
+							><span class="text">contact us</span> 
+							</a><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-22" data-title="Slide" data-thumb="//hotelzo.peacefulqode.com//website/wp-content/uploads/2022/08/2-2-50x100.jpg" data-anim="ms:300;" data-in="o:0;" data-out="a:false;">
+							<img src="/website/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="2" width="1920" height="949" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//hotelzo.peacefulqode.com//website/wp-content/uploads/2022/08/2-2.jpg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-5-slide-22-layer-0" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-213px,-178px,-160px,-123px;y:m;yo:-190px,-157px,-119px,-80px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:45px,37px,28px,17px;h:1px;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:300;sp:1000;sR:300;"
+								data-frame_999="o:0;st:w;sR:7700;"
+								style="z-index:9;background-color:#ffffff;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-22-layer-1" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:-190px,-157px,-119px,-79px;"
+								data-text="w:normal;s:16,14,14,12;l:24,22,22,20;ls:4px,3px,2px,1px;fw:500;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:300;sp:1000;sR:300;"
+								data-frame_999="o:0;st:w;sR:7700;"
+								style="z-index:10;font-family:'Jost';text-transform:uppercase;"
+							>welcome to the smart hotel 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-22-layer-2" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:207px,173px,158px,120px;y:m;yo:-190px,-157px,-120px,-80px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:45px,37px,28px,17px;h:1px;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:300;sp:1000;sR:300;"
+								data-frame_999="o:0;st:w;sR:7700;"
+								style="z-index:8;background-color:#ffffff;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-22-layer-3" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:-86px,-72px,-37px,-22px;"
+								data-text="w:normal;s:72,59,48,32;l:80,60,56,40;fw:600;a:center;"
+								data-dim="w:867px,715px,567px,349px;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:800;sp:1000;sR:800;"
+								data-frame_999="o:0;st:w;sR:7200;"
+								style="z-index:11;font-family:'Cormorant Garamond';text-transform:capitalize;"
+							>Are you dreaming of a place to stay? We are here! 
+							</rs-layer><!--
+
+							--><a
+								id="slider-5-slide-22-layer-4" 
+								class="rs-layer pt-button pt-button-flat pt-white-border rev-btn"
+								href="about-us/index.html" target="_self"
+								data-type="button"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-90px,-95px,-73px,-63px;y:m;yo:67px,46px,79px,64px;"
+								data-text="w:normal;s:14,14,14,13;l:28,22,22,20;ls:3px,2px,1px,0px;fw:500;"
+								data-dim="minh:0px,none,none,none;"
+								data-padding="t:12,12,14,10;r:30,25,22,20;b:12,12,14,10;l:30,25,22,20;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:1200;sp:1000;sR:1200;"
+								data-frame_999="o:0;st:w;sR:6800;"
+								data-frame_hover="c:#19130b;bgc:#fff;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:13;background-color:#00a9ae;font-family:'Jost';text-transform:uppercase;"
+							><span class="text">read more</span> 
+							</a><!--
+
+							--><a
+								id="slider-5-slide-22-layer-5" 
+								class="rs-layer pt-button pt-button-flat pt-white-border rev-btn"
+								href="contact-us/index.html" target="_self"
+								data-type="button"
+								data-color="#19130b"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:106px,78px,87px,77px;y:m;yo:67px,46px,79px,64px;"
+								data-text="w:normal;s:14,14,14,13;l:28,22,22,20;ls:3px,2px,1px,0px;fw:500;"
+								data-dim="minh:0px,none,none,none;"
+								data-padding="t:12,12,14,10;r:30,25,22,20;b:12,12,14,10;l:30,25,22,20;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:1200;sp:1000;sR:1200;"
+								data-frame_999="o:0;st:w;sR:6800;"
+								data-frame_hover="c:#fff;bgc:#00a9ae;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:12;background-color:#ffffff;font-family:'Jost';text-transform:uppercase;"
+							><span class="text">contact us</span> 
+							</a><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-23" data-title="Slide" data-thumb="//hotelzo.peacefulqode.com//website/wp-content/uploads/2022/08/3-2-50x100.jpg" data-anim="ms:300;" data-in="o:0;" data-out="a:false;">
+							<img src="/website/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="3" width="1920" height="949" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//hotelzo.peacefulqode.com//website/wp-content/uploads/2022/08/3-2.jpg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-5-slide-23-layer-0" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-213px,-178px,-160px,-123px;y:m;yo:-190px,-157px,-119px,-80px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:45px,37px,28px,17px;h:1px;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:300;sp:1000;sR:300;"
+								data-frame_999="o:0;st:w;sR:7700;"
+								style="z-index:9;background-color:#ffffff;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-23-layer-1" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:-190px,-157px,-119px,-79px;"
+								data-text="w:normal;s:16,14,14,12;l:24,22,22,20;ls:4px,3px,2px,1px;fw:500;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:300;sp:1000;sR:300;"
+								data-frame_999="o:0;st:w;sR:7700;"
+								style="z-index:10;font-family:'Jost';text-transform:uppercase;"
+							>welcome to the smart hotel 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-23-layer-2" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:207px,173px,158px,120px;y:m;yo:-190px,-157px,-120px,-80px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:45px,37px,28px,17px;h:1px;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:300;sp:1000;sR:300;"
+								data-frame_999="o:0;st:w;sR:7700;"
+								style="z-index:8;background-color:#ffffff;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-23-layer-3" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:-86px,-72px,-37px,-22px;"
+								data-text="w:normal;s:72,59,48,32;l:80,60,56,40;fw:600;a:center;"
+								data-dim="w:867px,715px,567px,349px;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:800;sp:1000;sR:800;"
+								data-frame_999="o:0;st:w;sR:7200;"
+								style="z-index:11;font-family:'Cormorant Garamond';text-transform:capitalize;"
+							>Exclusive access to unique experiences. 
+							</rs-layer><!--
+
+							--><a
+								id="slider-5-slide-23-layer-4" 
+								class="rs-layer pt-button pt-button-flat pt-white-border rev-btn"
+								href="about-us/index.html" target="_self"
+								data-type="button"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-90px,-95px,-73px,-63px;y:m;yo:67px,46px,79px,64px;"
+								data-text="w:normal;s:14,14,14,13;l:28,22,22,20;ls:3px,2px,1px,0px;fw:500;"
+								data-dim="minh:0px,none,none,none;"
+								data-padding="t:12,12,14,10;r:30,25,22,20;b:12,12,14,10;l:30,25,22,20;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:1200;sp:1000;sR:1200;"
+								data-frame_999="o:0;st:w;sR:6800;"
+								data-frame_hover="c:#19130b;bgc:#fff;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:13;background-color:#00a9ae;font-family:'Jost';text-transform:uppercase;"
+							><span class="text">read more</span> 
+							</a><!--
+
+							--><a
+								id="slider-5-slide-23-layer-5" 
+								class="rs-layer pt-button pt-button-flat pt-white-border rev-btn"
+								href="contact-us/index.html" target="_self"
+								data-type="button"
+								data-color="#19130b"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:107px,78px,87px,77px;y:m;yo:67px,46px,79px,64px;"
+								data-text="w:normal;s:14,14,14,13;l:28,22,22,20;ls:3px,2px,1px,0px;fw:500;"
+								data-dim="minh:0px,none,none,none;"
+								data-padding="t:12,12,14,10;r:30,25,22,20;b:12,12,14,10;l:30,25,22,20;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:1200;sp:1000;sR:1200;"
+								data-frame_999="o:0;st:w;sR:6800;"
+								data-frame_hover="c:#fff;bgc:#00a9ae;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;sp:100;e:power1.inOut;bri:120%;"
+								style="z-index:12;background-color:#ffffff;font-family:'Jost';text-transform:uppercase;"
+							><span class="text">contact us</span> 
+							</a><!--
+-->						</rs-slide>
+					</rs-slides>
+					<rs-static-layers><!--
+					--></rs-static-layers>
+				</rs-module>
+				<script>
+					setREVStartSize({c: 'rev_slider_5_1',rl:[1240,1024,778,480],el:[900,768,550,400],gw:[1240,1024,778,480],gh:[900,768,550,400],type:'standard',justify:'',layout:'fullwidth',mh:"0"});if (window.RS_MODULES!==undefined && window.RS_MODULES.modules!==undefined && window.RS_MODULES.modules["revslider51"]!==undefined) {window.RS_MODULES.modules["revslider51"].once = false;window.revapi5 = undefined;if (window.RS_MODULES.checkMinimal!==undefined) window.RS_MODULES.checkMinimal()}
+				</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+</div>
+
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-9b58ea6 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="9b58ea6" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6219850" data-id="6219850" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-3ea73d8 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3ea73d8" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-eed4076" data-id="eed4076" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fcbb67c elementor-widget elementor-widget-shortcode" data-id="fcbb67c" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><div role="form" class="wpcf7" id="wpcf7-f1230-p36-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="https://hotelzo.peacefulqode.com/#wpcf7-f1230-p36-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="1230" />
+<input type="hidden" name="_wpcf7_version" value="5.6.2" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1230-p36-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="36" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+</div>
+<div class="pt-booking-form">
+<div class="pt-booking-block arrival">
+<h6 class="pt-booking-label"><label>Arrival Date</label></h6>
+<div class="pt-booking-field pt-calendar-icon">
+			<span class="wpcf7-form-control-wrap" data-name="date-527"><input type="date" name="date-527" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-date" aria-invalid="false" /></span>
+		</div>
+</div>
+<div class="pt-booking-block departure ">
+<h6 class="pt-booking-label"><label>Departure Date</label></h6>
+<div class="pt-booking-field pt-calendar-icon">
+			<span class="wpcf7-form-control-wrap" data-name="date-527"><input type="date" name="date-527" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-date" aria-invalid="false" /></span>
+		</div>
+</div>
+<div class="pt-booking-block adults">
+<h6 class="pt-booking-label"><label>Adults</label></h6>
+<div class="pt-booking-field">
+			<span class="wpcf7-form-control-wrap" data-name="Adults"><select name="Adults" class="wpcf7-form-control wpcf7-select" aria-invalid="false"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></span>
+		</div>
+</div>
+<div class="pt-booking-block children">
+<h6 class="pt-booking-label"><label>Children</label></h6>
+<div class="pt-booking-field">
+			<span class="wpcf7-form-control-wrap" data-name="Children"><select name="Children" class="wpcf7-form-control wpcf7-select" aria-invalid="false"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></span>
+		</div>
+</div>
+<div class="pt-booking-block check-bt">
+<div class="pt-booking-submit">
+			 <input type="submit" value="Availability" class="wpcf7-form-control has-spinner wpcf7-submit" />
+		</div>
+</div>
+</div>
+<div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-7ebfa26 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="7ebfa26" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-702b621" data-id="702b621" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-0c4297d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0c4297d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-805b453" data-id="805b453" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-db317b0 elementor-widget elementor-widget-section-title" data-id="db317b0" data-element_type="widget" data-widget_type="section-title.default">
+				<div class="elementor-widget-container">
+			<div class=" pt-section-title  pt-section-title-style-1 text-left">
+
+   		   		<span class="pt-section-sub-title">about hotel</span>
+   	   			   <h5 class="pt-section-title" >Great place for Living on tour</h5>
+	   <p class="pt-section-description">There are many variations of passages of Lorem Ipsum availab, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
+     
+ 
+	</div>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-3d6ae6d elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget elementor-widget-image-box" data-id="3d6ae6d" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="116" height="116" src="/website/wp-content/uploads/2022/07/2.png" class="attachment-full size-full" alt="" loading="lazy" /></figure><div class="elementor-image-box-content"><h5 class="elementor-image-box-title">Alex John Martin</h5><p class="elementor-image-box-description">Hotel manager</p></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d06bd69 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="d06bd69" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="300" height="306" src="/website/wp-content/uploads/2022/07/sign.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/sign.png 300w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/sign-294x300.png 294w" sizes="(max-width: 300px) 100vw, 300px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c7064e0" data-id="c7064e0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-756db59 elementor-widget elementor-widget-image" data-id="756db59" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="594" height="729" src="/website/wp-content/uploads/2022/07/about.jpg" class="attachment-full size-full" alt="" loading="lazy" srcset="https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/about.jpg 594w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/about-244x300.jpg 244w" sizes="(max-width: 594px) 100vw, 594px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6381056" data-id="6381056" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6a2d153 elementor-widget elementor-widget-section-title" data-id="6a2d153" data-element_type="widget" data-widget_type="section-title.default">
+				<div class="elementor-widget-container">
+			<div class=" pt-section-title  pt-section-title-style-1 text-left">
+
+   		   			   <h5 class="pt-section-title" >waiting for Adventure ? Don&#039;t miss this then</h5>
+	   <p class="pt-section-description">There are many variations of passages of Lorem Ip available, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
+     
+ 
+	</div>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-35330d4 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-peaceful_counters" data-id="35330d4" data-element_type="widget" data-widget_type="peaceful_counters.default">
+				<div class="elementor-widget-container">
+			
+<div class="pt-counter pt-style-1 text-left">
+   <div class="pt-counter-top">
+      <div class="pt-counter-icon">
+         <i class=" flaticon-hotel-1"></i>
+      </div>
+      <div class="pt-counter-num-prefix">
+                  <h5 class="timer" data-to="850" data-speed="5000">850</h5>
+         
+                            
+      </div>
+   </div>
+   <div class="pt-counter-info">
+      <h4 class="pt-counter-title">Fibre readable</h4>
+            <p class="pt-counter-description">Pick Up &amp; Drop typesetting </p>
+         </div>
+</div>
+
+
+
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-a63a49a elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-peaceful_counters" data-id="a63a49a" data-element_type="widget" data-widget_type="peaceful_counters.default">
+				<div class="elementor-widget-container">
+			
+<div class="pt-counter pt-style-1 text-left">
+   <div class="pt-counter-top">
+      <div class="pt-counter-icon">
+         <i class=" flaticon-living-room"></i>
+      </div>
+      <div class="pt-counter-num-prefix">
+                  <h5 class="timer" data-to="670" data-speed="5000">670</h5>
+         
+                            
+      </div>
+   </div>
+   <div class="pt-counter-info">
+      <h4 class="pt-counter-title">Room Service</h4>
+            <p class="pt-counter-description">Swimming embarrassing </p>
+         </div>
+</div>
+
+
+
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-f7d66ea elementor-widget elementor-widget-Button" data-id="f7d66ea" data-element_type="widget" data-widget_type="Button.default">
+				<div class="elementor-widget-container">
+			
+
+  <div class="pt-btn-container">
+        <a class="pt-button pt-button-flat" href="about-us/index.html">
+            <span class="text">Read more</span>
+        </a>
+  </div>
+
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-ff21361 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="ff21361" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7e0b6b8" data-id="7e0b6b8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-6d20d92 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6d20d92" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-0d76c0e" data-id="0d76c0e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fbe9c93 elementor-widget elementor-widget-section-title" data-id="fbe9c93" data-element_type="widget" data-widget_type="section-title.default">
+				<div class="elementor-widget-container">
+			<div class=" pt-section-title  pt-section-title-style-1 text-center">
+
+   		   		<span class="pt-section-sub-title">our services</span>
+   	   			   <h5 class="pt-section-title" >Explore Our Hotel Services</h5>
+	   <p class="pt-section-description"></p>
+     
+ 
+	</div>
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-inner-section elementor-element elementor-element-1972c30 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1972c30" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-19b5b6f" data-id="19b5b6f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-eb4d1d6 elementor-widget elementor-widget-fancybox" data-id="eb4d1d6" data-element_type="widget" data-widget_type="fancybox.default">
+				<div class="elementor-widget-container">
+			    <div class="pt-fancy-box pt-style-1 text-center ">
+       <div class="pt-icon">
+          <i class=" flaticon-terrace" aria-hidden="true"></i>
+      </div>
+      <div class="pt-fancy-box-info">
+          <h5 class="pt-fancy-box-title">Pick Up & Drop</h5>          <div class="pt-fancy-box-content">
+              <p class="pt-fancybox-description">There are many variations of passages of Lorem available, majority the suffered    </p>
+                     </div>
+   </div>
+</div>
+
+		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4f65a28" data-id="4f65a28" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3129baf elementor-widget elementor-widget-fancybox" data-id="3129baf" data-element_type="widget" data-widget_type="fancybox.default">
+				<div class="elementor-widget-container">
+			    <div class="pt-fancy-box pt-style-1 text-center ">
+       <div class="pt-icon">
+          <i class=" flaticon-parking" aria-hidden="true"></i>
+      </div>
+      <div class="pt-fancy-box-info">
+          <h5 class="pt-fancy-box-title">Parking Space</h5>          <div class="pt-fancy-box-content">
+              <p class="pt-fancybox-description">There are many variations of passages of Lorem available, majority the suffered    </p>
+                     </div>
+   </div>
+</div>
+
+		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-eb48627" data-id="eb48627" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ab02721 elementor-widget elementor-widget-fancybox" data-id="ab02721" data-element_type="widget" data-widget_type="fancybox.default">
+				<div class="elementor-widget-container">
+			    <div class="pt-fancy-box pt-style-1 text-center ">
+       <div class="pt-icon">
+          <i class=" flaticon-wifi-router" aria-hidden="true"></i>
+      </div>
+      <div class="pt-fancy-box-info">
+          <h5 class="pt-fancy-box-title">high speed wifi</h5>          <div class="pt-fancy-box-content">
+              <p class="pt-fancybox-description">There are many variations of passages of Lorem available, majority the suffered    </p>
+                     </div>
+   </div>
+</div>
+
+		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-a972a81" data-id="a972a81" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d79ded6 elementor-widget elementor-widget-fancybox" data-id="d79ded6" data-element_type="widget" data-widget_type="fancybox.default">
+				<div class="elementor-widget-container">
+			    <div class="pt-fancy-box pt-style-1 text-center ">
+       <div class="pt-icon">
+          <i class=" flaticon-swimming-pool" aria-hidden="true"></i>
+      </div>
+      <div class="pt-fancy-box-info">
+          <h5 class="pt-fancy-box-title">Swimming Pool</h5>          <div class="pt-fancy-box-content">
+              <p class="pt-fancybox-description">There are many variations of passages of Lorem available, majority the suffered    </p>
+                     </div>
+   </div>
+</div>
+
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-27cebf0 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="27cebf0" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-76758db" data-id="76758db" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-016e68a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="016e68a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-56b5fe4" data-id="56b5fe4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6df8167 elementor-widget elementor-widget-section-title" data-id="6df8167" data-element_type="widget" data-widget_type="section-title.default">
+				<div class="elementor-widget-container">
+			<div class=" pt-section-title  pt-section-title-style-1 text-center">
+
+   		   		<span class="pt-section-sub-title">OUR ROOMS</span>
+   	   			   <h5 class="pt-section-title" >Featured Rooms</h5>
+	   <p class="pt-section-description"></p>
+     
+ 
+	</div>
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-inner-section elementor-element elementor-element-125d1e5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="125d1e5" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-122b5d3" data-id="122b5d3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-030d2bf elementor-widget elementor-widget-Room" data-id="030d2bf" data-element_type="widget" data-widget_type="Room.default">
+				<div class="elementor-widget-container">
+			
+<div class="pt-room-box-slider pt-style-1 text-left">
+  <div class="owl-carousel" data-dots="true" data-nav="false" data-desk_num="3" data-lap_num="3" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="false" data-loop="true" data-margin="30">
+            <div class="item">
+          
+
+         <div class="pt-room-box pt-style-1 text-left ">
+                    <h5 class="pt-room-title"><a href="room/luxury-room/index.html">Luxury Room</a></h5>
+          <div class="pt-room-price-main">
+            <span class="pt-room-day">day</span> / <span class="pt-room-price">200$ </span>
+          </div>
+         
+
+          <div class="pt-room-img">
+           <img  src="/website/wp-content/uploads/2022/08/1.jpg" alt="pt-room-img" />         </div>
+         <div class="pt-room-button">
+                     <div class="pt-btn-container">
+            <a href="room/luxury-room/index.html" class="pt-button pt-button-flat">
+             <span class="text">book now</span>
+           </a>
+         </div>
+              </div>
+   </div>
+
+ </div>
+
+        <div class="item">
+          
+
+         <div class="pt-room-box pt-style-1 text-left ">
+                    <h5 class="pt-room-title"><a href="room/superior-room/index.html">Superior Room</a></h5>
+          <div class="pt-room-price-main">
+            <span class="pt-room-day">day</span> / <span class="pt-room-price">850$ </span>
+          </div>
+         
+
+          <div class="pt-room-img">
+           <img  src="/website/wp-content/uploads/2022/08/2.jpg" alt="pt-room-img" />         </div>
+         <div class="pt-room-button">
+                     <div class="pt-btn-container">
+            <a href="room/superior-room/index.html" class="pt-button pt-button-flat">
+             <span class="text">book now</span>
+           </a>
+         </div>
+              </div>
+   </div>
+
+ </div>
+
+        <div class="item">
+          
+
+         <div class="pt-room-box pt-style-1 text-left ">
+                    <h5 class="pt-room-title"><a href="room/classic-room/index.html">Classic Room</a></h5>
+          <div class="pt-room-price-main">
+            <span class="pt-room-day">day</span> / <span class="pt-room-price">550$ </span>
+          </div>
+         
+
+          <div class="pt-room-img">
+           <img  src="/website/wp-content/uploads/2022/08/3.jpg" alt="pt-room-img" />         </div>
+         <div class="pt-room-button">
+                     <div class="pt-btn-container">
+            <a href="room/classic-room/index.html" class="pt-button pt-button-flat">
+             <span class="text">book now</span>
+           </a>
+         </div>
+              </div>
+   </div>
+
+ </div>
+
+        <div class="item">
+          
+
+         <div class="pt-room-box pt-style-1 text-left ">
+                    <h5 class="pt-room-title"><a href="room/deluxe-room/index.html">Deluxe Room</a></h5>
+          <div class="pt-room-price-main">
+            <span class="pt-room-day">day</span> / <span class="pt-room-price">350$ </span>
+          </div>
+         
+
+          <div class="pt-room-img">
+           <img  src="/website/wp-content/uploads/2022/08/4.jpg" alt="pt-room-img" />         </div>
+         <div class="pt-room-button">
+                     <div class="pt-btn-container">
+            <a href="room/deluxe-room/index.html" class="pt-button pt-button-flat">
+             <span class="text">book now</span>
+           </a>
+         </div>
+              </div>
+   </div>
+
+ </div>
+
+        <div class="item">
+          
+
+         <div class="pt-room-box pt-style-1 text-left ">
+                    <h5 class="pt-room-title"><a href="room/suite-room/index.html">Suite Room</a></h5>
+          <div class="pt-room-price-main">
+            <span class="pt-room-day">day</span> / <span class="pt-room-price">250$ </span>
+          </div>
+         
+
+          <div class="pt-room-img">
+           <img  src="/website/wp-content/uploads/2022/08/5.jpg" alt="pt-room-img" />         </div>
+         <div class="pt-room-button">
+                     <div class="pt-btn-container">
+            <a href="room/suite-room/index.html" class="pt-button pt-button-flat">
+             <span class="text">book now</span>
+           </a>
+         </div>
+              </div>
+   </div>
+
+ </div>
+
+        <div class="item">
+          
+
+         <div class="pt-room-box pt-style-1 text-left ">
+                    <h5 class="pt-room-title"><a href="room/our-family-room-2/index.html">Our family room</a></h5>
+          <div class="pt-room-price-main">
+            <span class="pt-room-day">night</span> / <span class="pt-room-price">200$ </span>
+          </div>
+         
+
+          <div class="pt-room-img">
+           <img  src="/website/wp-content/uploads/2022/08/6.jpg" alt="pt-room-img" />         </div>
+         <div class="pt-room-button">
+                     <div class="pt-btn-container">
+            <a href="room/our-family-room-2/index.html" class="pt-button pt-button-flat">
+             <span class="text">book now</span>
+           </a>
+         </div>
+              </div>
+   </div>
+
+ </div>
+
+
+</div>
+
+</div>
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-a7666e7 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="a7666e7" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-19f86ce" data-id="19f86ce" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-3cbdd98 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3cbdd98" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1243c04" data-id="1243c04" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2fc7d00 elementor-widget elementor-widget-section-title" data-id="2fc7d00" data-element_type="widget" data-widget_type="section-title.default">
+				<div class="elementor-widget-container">
+			<div class=" pt-section-title  pt-section-title-style-1 text-left">
+
+   		   		<span class="pt-section-sub-title">about hotel</span>
+   	   			   <h5 class="pt-section-title" >Find the Best Hotel in Your Next Vacation</h5>
+	   <p class="pt-section-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which If you are going to use a passage of Lorem Ipsum, you need to be sure there.</p>
+     
+ 
+	</div>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-521fa2d elementor-widget elementor-widget-text-editor" data-id="521fa2d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.						</div>
+				</div>
+				<div class="elementor-element elementor-element-8b88c3e elementor-widget elementor-widget-Button" data-id="8b88c3e" data-element_type="widget" data-widget_type="Button.default">
+				<div class="elementor-widget-container">
+			
+
+  <div class="pt-btn-container">
+        <a class="pt-button pt-button-flat" href="about-us/index.html">
+            <span class="text">Read more</span>
+        </a>
+  </div>
+
+		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9c5b008" data-id="9c5b008" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3eeac05 elementor-widget elementor-widget-image" data-id="3eeac05" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="723" height="798" src="/website/wp-content/uploads/2022/07/about2.jpg" class="attachment-full size-full" alt="" loading="lazy" srcset="https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/about2.jpg 723w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/about2-272x300.jpg 272w" sizes="(max-width: 723px) 100vw, 723px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-66bcaf8 elementor-widget__width-auto elementor-absolute elementor-hidden-mobile elementor-widget elementor-widget-counter" data-id="66bcaf8" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="125" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix">+</span>
+			</div>
+							<div class="elementor-counter-title">Year Experiance</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-36ef1ad elementor-widget__width-auto elementor-absolute elementor-hidden-mobile elementor-widget elementor-widget-counter" data-id="36ef1ad" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="325" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix">+</span>
+			</div>
+							<div class="elementor-counter-title">Total Projects</div>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-3d41d42 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="3d41d42" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-327485e" data-id="327485e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-7a6e1b7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7a6e1b7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-fddecd0" data-id="fddecd0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2566ad4 elementor-widget elementor-widget-section-title" data-id="2566ad4" data-element_type="widget" data-widget_type="section-title.default">
+				<div class="elementor-widget-container">
+			<div class=" pt-section-title  pt-section-title-style-1 text-center">
+
+   		   		<span class="pt-section-sub-title">our Projects</span>
+   	   			   <h5 class="pt-section-title" >Discover Upcoming Projects Of Us</h5>
+	   <p class="pt-section-description"></p>
+     
+ 
+	</div>
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-inner-section elementor-element elementor-element-b44e46f elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="b44e46f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7008c67" data-id="7008c67" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5ce876e elementor-widget elementor-widget-portfoliobox" data-id="5ce876e" data-element_type="widget" data-widget_type="portfoliobox.default">
+				<div class="elementor-widget-container">
+			
+<div class="pt-portfoliobox pt-portfoliobox-style-1">
+  <div class="owl-carousel" data-dots="false" data-nav="true" data-desk_num="2" data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="true" data-loop="true" data-margin="30">
+            <div class="item">
+          <div class="pt-portfoliobox-1 text-left pt-hover-bellow">
+            <div class="pt-portfolio-block">
+              <div class="pt-portfolio-img  ">
+               <img  src="/website/wp-content/uploads/2022/07/12-2-900x550.jpg" alt="" />              </div>
+              <div class="pt-portfolio-info">
+                                <h5 class="pt-portfolio-style-1-title">Included in the Room Rate</h5>
+                <div class="pt-portfolio-description" >
+                  <p>many variations of passages of Lorem Ipsum available</p>
+                </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+            <div class="item">
+          <div class="pt-portfoliobox-1 text-left pt-hover-bellow">
+            <div class="pt-portfolio-block">
+              <div class="pt-portfolio-img  ">
+               <img  src="/website/wp-content/uploads/2022/07/10-900x550.jpg" alt="" />              </div>
+              <div class="pt-portfolio-info">
+                                <h5 class="pt-portfolio-style-1-title">Benefits of Swimming</h5>
+                <div class="pt-portfolio-description" >
+                  <p>many variations of passages of Lorem Ipsum available</p>
+                </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+            <div class="item">
+          <div class="pt-portfoliobox-1 text-left pt-hover-bellow">
+            <div class="pt-portfolio-block">
+              <div class="pt-portfolio-img  ">
+               <img  src="/website/wp-content/uploads/2022/07/11-900x550.jpg" alt="" />              </div>
+              <div class="pt-portfolio-info">
+                                <h5 class="pt-portfolio-style-1-title">Lighting Design</h5>
+                <div class="pt-portfolio-description" >
+                  <p>many variations of passages of Lorem Ipsum available</p>
+                </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+            <div class="item">
+          <div class="pt-portfoliobox-1 text-left pt-hover-bellow">
+            <div class="pt-portfolio-block">
+              <div class="pt-portfolio-img  ">
+               <img  src="/website/wp-content/uploads/2022/07/9-900x550.jpg" alt="" />              </div>
+              <div class="pt-portfolio-info">
+                                <h5 class="pt-portfolio-style-1-title">Fitness Health Club</h5>
+                <div class="pt-portfolio-description" >
+                  <p>many variations of passages of Lorem Ipsum available</p>
+                </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+            <div class="item">
+          <div class="pt-portfoliobox-1 text-left pt-hover-bellow">
+            <div class="pt-portfolio-block">
+              <div class="pt-portfolio-img  ">
+               <img  src="/website/wp-content/uploads/2022/07/8-900x550.jpg" alt="" />              </div>
+              <div class="pt-portfolio-info">
+                                <h5 class="pt-portfolio-style-1-title">Wellness</h5>
+                <div class="pt-portfolio-description" >
+                  <p>many variations of passages of Lorem Ipsum available</p>
+                </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+            <div class="item">
+          <div class="pt-portfoliobox-1 text-left pt-hover-bellow">
+            <div class="pt-portfolio-block">
+              <div class="pt-portfolio-img  ">
+               <img  src="/website/wp-content/uploads/2022/07/7-900x550.jpg" alt="" />              </div>
+              <div class="pt-portfolio-info">
+                                <h5 class="pt-portfolio-style-1-title">Internal Pool</h5>
+                <div class="pt-portfolio-description" >
+                  <p>many variations of passages of Lorem Ipsum available</p>
+                </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+            <div class="item">
+          <div class="pt-portfoliobox-1 text-left pt-hover-bellow">
+            <div class="pt-portfolio-block">
+              <div class="pt-portfolio-img  ">
+               <img  src="/website/wp-content/uploads/2022/07/6-900x550.jpg" alt="" />              </div>
+              <div class="pt-portfolio-info">
+                                <h5 class="pt-portfolio-style-1-title">Restaurants Bar</h5>
+                <div class="pt-portfolio-description" >
+                  <p>many variations of passages of Lorem Ipsum available</p>
+                </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+            <div class="item">
+          <div class="pt-portfoliobox-1 text-left pt-hover-bellow">
+            <div class="pt-portfolio-block">
+              <div class="pt-portfolio-img  ">
+               <img  src="/website/wp-content/uploads/2022/07/5-900x550.jpg" alt="" />              </div>
+              <div class="pt-portfolio-info">
+                                <h5 class="pt-portfolio-style-1-title">Lounge Bar</h5>
+                <div class="pt-portfolio-description" >
+                  <p>many variations of passages of Lorem Ipsum available</p>
+                </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+            <div class="item">
+          <div class="pt-portfoliobox-1 text-left pt-hover-bellow">
+            <div class="pt-portfolio-block">
+              <div class="pt-portfolio-img  ">
+               <img  src="/website/wp-content/uploads/2022/07/1-1-900x550.jpg" alt="" />              </div>
+              <div class="pt-portfolio-info">
+                                <h5 class="pt-portfolio-style-1-title">Family Room</h5>
+                <div class="pt-portfolio-description" >
+                  <p>many variations of passages of Lorem Ipsum available</p>
+                </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+            <div class="item">
+          <div class="pt-portfoliobox-1 text-left pt-hover-bellow">
+            <div class="pt-portfolio-block">
+              <div class="pt-portfolio-img  ">
+               <img  src="/website/wp-content/uploads/2022/07/2-1-900x550.jpg" alt="" />              </div>
+              <div class="pt-portfolio-info">
+                                <h5 class="pt-portfolio-style-1-title">Double Room</h5>
+                <div class="pt-portfolio-description" >
+                  <p>many variations of passages of Lorem Ipsum available</p>
+                </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+</div>
+
+</div>
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-49efb55 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="49efb55" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ed3455b" data-id="ed3455b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-136b181 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="136b181" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-86bff54" data-id="86bff54" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e33cb2d elementor-widget elementor-widget-section-title" data-id="e33cb2d" data-element_type="widget" data-widget_type="section-title.default">
+				<div class="elementor-widget-container">
+			<div class=" pt-section-title  pt-section-title-style-1 text-left">
+
+   		   		<span class="pt-section-sub-title">what we do </span>
+   	   			   <h5 class="pt-section-title" >A Hotel Booking Agency</h5>
+	   <p class="pt-section-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form publishing packages and web page.</p>
+     
+ 
+	</div>
+		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f0175b0" data-id="f0175b0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c2f12ed elementor-widget elementor-widget-process_Step" data-id="c2f12ed" data-element_type="widget" data-widget_type="process_Step.default">
+				<div class="elementor-widget-container">
+			
+
+<div class="pt-process-step pt-process-style-1 text-left">
+    <div class="pt-process-media">
+         <div class="pt-process-icon"><i class=" flaticon-hotel"></i></div>         <div class="pt-process-number"> <span>01</span></div>
+    </div>
+
+    <div class="pt-process-step-info">
+        <h5 class="pt-process-title">Pick up & Drop </h5>         <div class="pt-process-description">
+        <p>Lorem Ipsum available, but the majority Lorem Ipsum available, but the majority have suffered alteration in some form        </p>
+        </div>
+        
+
+  <div class="pt-btn-container">
+        <a class="pt-button pt-button-link" href="our-services/index.html">
+            <span class="text">Read More</span>
+        </a>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-79aa276" data-id="79aa276" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7c32b88 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-process_Step" data-id="7c32b88" data-element_type="widget" data-widget_type="process_Step.default">
+				<div class="elementor-widget-container">
+			
+
+<div class="pt-process-step pt-process-style-1 text-left">
+    <div class="pt-process-media">
+         <div class="pt-process-icon"><i class=" flaticon-parking"></i></div>         <div class="pt-process-number"> <span>02</span></div>
+    </div>
+
+    <div class="pt-process-step-info">
+        <h5 class="pt-process-title">Parking Space </h5>         <div class="pt-process-description">
+        <p>Lorem Ipsum available, but the majority Lorem Ipsum available, but the majority have suffered alteration in some form        </p>
+        </div>
+        
+
+  <div class="pt-btn-container">
+        <a class="pt-button pt-button-link" href="about-us/index.html">
+            <span class="text">Read More</span>
+        </a>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-inner-section elementor-element elementor-element-e1c0293 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e1c0293" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8175766" data-id="8175766" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-53372a2 elementor-widget elementor-widget-process_Step" data-id="53372a2" data-element_type="widget" data-widget_type="process_Step.default">
+				<div class="elementor-widget-container">
+			
+
+<div class="pt-process-step pt-process-style-1 text-left">
+    <div class="pt-process-media">
+         <div class="pt-process-icon"><i class=" flaticon-swimming-pool"></i></div>         <div class="pt-process-number"> <span>03</span></div>
+    </div>
+
+    <div class="pt-process-step-info">
+        <h5 class="pt-process-title">Swimming pool </h5>         <div class="pt-process-description">
+        <p>Lorem Ipsum available, but the majority Lorem Ipsum available, but the majority have suffered alteration in some form        </p>
+        </div>
+        
+
+  <div class="pt-btn-container">
+        <a class="pt-button pt-button-link" href="about-us/index.html">
+            <span class="text">Read More</span>
+        </a>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7a188a9" data-id="7a188a9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0d5e538 elementor-widget elementor-widget-process_Step" data-id="0d5e538" data-element_type="widget" data-widget_type="process_Step.default">
+				<div class="elementor-widget-container">
+			
+
+<div class="pt-process-step pt-process-style-1 text-left">
+    <div class="pt-process-media">
+         <div class="pt-process-icon"><i class=" flaticon-wifi-router"></i></div>         <div class="pt-process-number"> <span>04</span></div>
+    </div>
+
+    <div class="pt-process-step-info">
+        <h5 class="pt-process-title">fiber intrernet</h5>         <div class="pt-process-description">
+        <p>Lorem Ipsum available, but the majority Lorem Ipsum available, but the majority have suffered alteration in some form        </p>
+        </div>
+        
+
+  <div class="pt-btn-container">
+        <a class="pt-button pt-button-link" href="our-services/index.html">
+            <span class="text">Read More</span>
+        </a>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2dd71eb" data-id="2dd71eb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3b5d003 elementor-widget elementor-widget-process_Step" data-id="3b5d003" data-element_type="widget" data-widget_type="process_Step.default">
+				<div class="elementor-widget-container">
+			
+
+<div class="pt-process-step pt-process-style-1 text-left">
+    <div class="pt-process-media">
+         <div class="pt-process-icon"><i class=" flaticon-coffee"></i></div>         <div class="pt-process-number"> <span>05</span></div>
+    </div>
+
+    <div class="pt-process-step-info">
+        <h5 class="pt-process-title">testy breakFast</h5>         <div class="pt-process-description">
+        <p>Lorem Ipsum available, but the majority Lorem Ipsum available, but the majority have suffered alteration in some form        </p>
+        </div>
+        
+
+  <div class="pt-btn-container">
+        <a class="pt-button pt-button-link" href="about-us/index.html">
+            <span class="text">Read More</span>
+        </a>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-5e4eb7c elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="5e4eb7c" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-da7db4a" data-id="da7db4a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-eb5adde elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="eb5adde" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-cc978bd" data-id="cc978bd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a3cdd4e elementor-widget elementor-widget-Popup_video" data-id="a3cdd4e" data-element_type="widget" data-widget_type="Popup_video.default">
+				<div class="elementor-widget-container">
+			<div class="pt-popup-video-block left">
+		
+    <div class="pt-video-icon" >
+        <a href="https://www.youtube.com/watch?v=XHOmBV4js_E" class="pt-video default popup-youtube">
+        	<i aria-hidden="true" class="ion ion-ios-play"></i>        </a>	            
+    </div>
+</div>
+ 
+ 
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-bcca3fa elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="bcca3fa" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9d253b4" data-id="9d253b4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-a2ce430 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a2ce430" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-427972f" data-id="427972f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f502002 elementor-widget elementor-widget-section-title" data-id="f502002" data-element_type="widget" data-widget_type="section-title.default">
+				<div class="elementor-widget-container">
+			<div class=" pt-section-title  pt-section-title-style-1 text-center">
+
+   		   		<span class="pt-section-sub-title">Guest Review</span>
+   	   			   <h5 class="pt-section-title" >What Our Guest Want To Says</h5>
+	   <p class="pt-section-description"></p>
+     
+ 
+	</div>
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-inner-section elementor-element elementor-element-77eb698 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="77eb698" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b9ba347" data-id="b9ba347" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5caa2bc elementor-widget elementor-widget-testimonial" data-id="5caa2bc" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+			
+    <div class="pt-testimonial-box-slider pt-testimonialbox-style-1 text-left ">
+     <div class="owl-carousel" data-dots="true" data-nav="false" data-desk_num="2" data-lap_num="2" data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="false" data-loop="true" data-margin="30">
+                 <div class="item">
+            <div class="pt-testimonial-box pt-style-1 text-left">
+                          <div class="pt-testimonial-content">
+                            <p class="pt-testimonial-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized Ipsum available, but the majored ity words which don’t but the majority have suffered alteration injected.</p>
+            </div>
+            <div class="pt-testimonial-media">
+              <div class="pt-testimonial-icon">
+               <i class="fa fa-quote-right"></i>
+             </div>
+                           <div class="pt-testimonial-img">
+                <img src="/website/wp-content/uploads/2022/07/1.png" alt="Testimonial-image"> 
+              </div>
+                 
+            <div class="pt-testimonial-meta">
+              <h5 class="pt-testmonial-title">Danial Frankie</h5>              <span>Building Manager</span>  
+            </div>
+            </div>
+            </div>
+          
+          </div>
+                   <div class="item">
+            <div class="pt-testimonial-box pt-style-1 text-left">
+                          <div class="pt-testimonial-content">
+                            <p class="pt-testimonial-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized Ipsum available, but the majored ity words which don’t but the majority have suffered alteration injected.</p>
+            </div>
+            <div class="pt-testimonial-media">
+              <div class="pt-testimonial-icon">
+               <i class="fa fa-quote-right"></i>
+             </div>
+                           <div class="pt-testimonial-img">
+                <img src="/website/wp-content/uploads/2022/07/2.png" alt="Testimonial-image"> 
+              </div>
+                 
+            <div class="pt-testimonial-meta">
+              <h5 class="pt-testmonial-title">Micheal Baker</h5>              <span>Owner</span>  
+            </div>
+            </div>
+            </div>
+          
+          </div>
+                   <div class="item">
+            <div class="pt-testimonial-box pt-style-1 text-left">
+                          <div class="pt-testimonial-content">
+                            <p class="pt-testimonial-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized Ipsum available, but the majored ity words which don’t but the majority have suffered alteration injected.</p>
+            </div>
+            <div class="pt-testimonial-media">
+              <div class="pt-testimonial-icon">
+               <i class="fa fa-quote-right"></i>
+             </div>
+                           <div class="pt-testimonial-img">
+                <img src="/website/wp-content/uploads/2022/07/3.png" alt="Testimonial-image"> 
+              </div>
+                 
+            <div class="pt-testimonial-meta">
+              <h5 class="pt-testmonial-title">David Matthews</h5>              <span>General Manager</span>  
+            </div>
+            </div>
+            </div>
+          
+          </div>
+                   <div class="item">
+            <div class="pt-testimonial-box pt-style-1 text-left">
+                          <div class="pt-testimonial-content">
+                            <p class="pt-testimonial-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized Ipsum available, but the majored ity words which don’t but the majority have suffered alteration injected.</p>
+            </div>
+            <div class="pt-testimonial-media">
+              <div class="pt-testimonial-icon">
+               <i class="fa fa-quote-right"></i>
+             </div>
+                           <div class="pt-testimonial-img">
+                <img src="/website/wp-content/uploads/2022/07/5.png" alt="Testimonial-image"> 
+              </div>
+                 
+            <div class="pt-testimonial-meta">
+              <h5 class="pt-testmonial-title">Robert Anderson</h5>              <span>Hr Manager</span>  
+            </div>
+            </div>
+            </div>
+          
+          </div>
+           </div>
+</div>
+
+
+
+
+
+
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-a5b342f elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="a5b342f" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-997e538" data-id="997e538" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-f9cd97b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f9cd97b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8835ae2" data-id="8835ae2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3d1fc70 elementor-widget elementor-widget-heading" data-id="3d1fc70" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">world's leading hotel services management provider</h2>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8b01ede" data-id="8b01ede" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e3865af pt-white-button elementor-widget elementor-widget-Button" data-id="e3865af" data-element_type="widget" data-widget_type="Button.default">
+				<div class="elementor-widget-container">
+			
+
+  <div class="pt-btn-container">
+        <a class="pt-button pt-button-flat" href="about-us/index.html">
+            <span class="text">read more</span>
+        </a>
+  </div>
+
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-7aa7031 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="7aa7031" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8b4d8f1" data-id="8b4d8f1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-4981010 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4981010" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c653f4f" data-id="c653f4f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7f967a9 elementor-widget elementor-widget-section-title" data-id="7f967a9" data-element_type="widget" data-widget_type="section-title.default">
+				<div class="elementor-widget-container">
+			<div class=" pt-section-title  pt-section-title-style-1 text-left">
+
+   		   		<span class="pt-section-sub-title">Booking now</span>
+   	   			   <h5 class="pt-section-title" >Book you visit now</h5>
+	   <p class="pt-section-description"></p>
+     
+ 
+	</div>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-5b8329e elementor-widget elementor-widget-shortcode" data-id="5b8329e" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><div role="form" class="wpcf7" id="wpcf7-f5-p36-o2" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="https://hotelzo.peacefulqode.com/#wpcf7-f5-p36-o2" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="5" />
+<input type="hidden" name="_wpcf7_version" value="5.6.2" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-p36-o2" />
+<input type="hidden" name="_wpcf7_container_post" value="36" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+</div>
+<div class="pt-contactform">
+<div class="row">
+<div class="col-md-6">
+			<span class="wpcf7-form-control-wrap" data-name="your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" /></span>
+		</div>
+<div class="col-md-6">
+<p><span class="wpcf7-form-control-wrap" data-name="your-Subject"><input type="text" name="your-Subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number" /></span>
+		</p></div>
+<div class="col-md-12">
+			<span class="wpcf7-form-control-wrap" data-name="your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email Address" /></span>
+		</div>
+<div class="col-md-12">
+			<span class="wpcf7-form-control-wrap" data-name="Subject"><input type="text" name="Subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="subject" /></span>
+		</div>
+<div class="col-md-12">
+                        <span class="wpcf7-form-control-wrap" data-name="your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Write Your Message"></textarea></span>
+		</div>
+<div class="col-md-12">
+		<input type="submit" value="Send Message" class="wpcf7-form-control has-spinner wpcf7-submit" />
+		</div>
+</div>
+</div>
+<div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2734177 elementor-hidden-tablet elementor-hidden-mobile" data-id="2734177" data-element_type="column">
+			<div class="elementor-widget-wrap">
+									</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-28cf559 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="28cf559" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7d8c5af" data-id="7d8c5af" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-bf2e89d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bf2e89d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-ee15945" data-id="ee15945" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f285874 elementor-widget elementor-widget-section-title" data-id="f285874" data-element_type="widget" data-widget_type="section-title.default">
+				<div class="elementor-widget-container">
+			<div class=" pt-section-title  pt-section-title-style-1 text-center">
+
+   		   		<span class="pt-section-sub-title">our blog</span>
+   	   			   <h5 class="pt-section-title" >watch our latest blog</h5>
+	   <p class="pt-section-description"></p>
+     
+ 
+	</div>
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+				<div class="elementor-section elementor-inner-section elementor-element elementor-element-bb85234 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bb85234" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f4f9c17" data-id="f4f9c17" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d15925a elementor-widget elementor-widget-blog" data-id="d15925a" data-element_type="widget" data-widget_type="blog.default">
+				<div class="elementor-widget-container">
+			<div class="pt-blog pt-blog-single ">
+
+        <div class="pt-blog-post">
+        <div class="pt-post-media">
+          <img loading="lazy" width="1400" height="800" src="/website/wp-content/uploads/2022/07/1-6.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/1-6.jpg 1400w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/1-6-300x171.jpg 300w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/1-6-1024x585.jpg 1024w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/1-6-768x439.jpg 768w" sizes="(max-width: 1400px) 100vw, 1400px" />        </div>
+
+        <div class="pt-blog-contain">
+         <div class="pt-post-meta">
+          <ul>
+           <li class="pt-post-author"><i class="fa fa-user"></i>admin</li>
+
+           <li class="pt-post-comment">
+                        <a href="richard-mcclintock-a-latin-professor-at-sydney-college/index.html"><i class="fa fa-comments"></i>1 Comment</a>
+          </li>
+        </ul>
+      </div>
+
+      <h5 class="pt-blog-title"><a href="richard-mcclintock-a-latin-professor-at-sydney-college/index.html">Richard McClintock, a Latin professor at -Sydney College</a></h5>
+
+      <div class="pt-blog-info">
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+     </div>
+     
+
+  </div>
+</div>
+
+
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-476a329" data-id="476a329" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5b12e77 elementor-widget elementor-widget-blog" data-id="5b12e77" data-element_type="widget" data-widget_type="blog.default">
+				<div class="elementor-widget-container">
+			<div class="pt-blog pt-blog-listing ">
+
+        <div class="pt-blog-post">
+        <div class="pt-post-media">
+          <img width="1400" height="800" src="/website/wp-content/uploads/2022/07/9-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/9-2.jpg 1400w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/9-2-300x171.jpg 300w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/9-2-1024x585.jpg 1024w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/9-2-768x439.jpg 768w" sizes="(max-width: 1400px) 100vw, 1400px" />        </div>
+
+        <div class="pt-blog-contain">
+         <div class="pt-post-meta">
+          <ul>
+           <li class="pt-post-author"><i class="fa fa-user"></i>admin</li>
+
+           <li class="pt-post-comment">
+                        <a href="when-our-power-of-choice-is-untramme-lled-and-nothing/index.html"><i class="fa fa-comments"></i>2 Comments</a>
+          </li>
+        </ul>
+      </div>
+
+      <h5 class="pt-blog-title"><a href="when-our-power-of-choice-is-untramme-lled-and-nothing/index.html">when our power of choice is untramme lled and nothing</a></h5>
+
+      <div class="pt-blog-info">
+             </div>
+     
+
+  </div>
+</div>
+
+
+</div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-acfd00f elementor-widget elementor-widget-blog" data-id="acfd00f" data-element_type="widget" data-widget_type="blog.default">
+				<div class="elementor-widget-container">
+			<div class="pt-blog pt-blog-listing ">
+
+        <div class="pt-blog-post">
+        <div class="pt-post-media">
+          <img width="1400" height="800" src="/website/wp-content/uploads/2022/07/11-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/11-2.jpg 1400w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/11-2-300x171.jpg 300w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/11-2-1024x585.jpg 1024w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/11-2-768x439.jpg 768w" sizes="(max-width: 1400px) 100vw, 1400px" />        </div>
+
+        <div class="pt-blog-contain">
+         <div class="pt-post-meta">
+          <ul>
+           <li class="pt-post-author"><i class="fa fa-user"></i>admin</li>
+
+           <li class="pt-post-comment">
+                        <a href="hotel-bathroom-collect-denounc-pleasure-and-praising/index.html"><i class="fa fa-comments"></i>1 Comment</a>
+          </li>
+        </ul>
+      </div>
+
+      <h5 class="pt-blog-title"><a href="hotel-bathroom-collect-denounc-pleasure-and-praising/index.html">Hotel Bathroom Collect denounc pleasure and praising</a></h5>
+
+      <div class="pt-blog-info">
+             </div>
+     
+
+  </div>
+</div>
+
+
+</div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-69f4ada elementor-widget elementor-widget-blog" data-id="69f4ada" data-element_type="widget" data-widget_type="blog.default">
+				<div class="elementor-widget-container">
+			<div class="pt-blog pt-blog-listing ">
+
+        <div class="pt-blog-post">
+        <div class="pt-post-media">
+          <img width="1400" height="800" src="/website/wp-content/uploads/2022/07/8-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/8-2.jpg 1400w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/8-2-300x171.jpg 300w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/8-2-1024x585.jpg 1024w, https://hotelzo.peacefulqode.com//website/wp-content/uploads/2022/07/8-2-768x439.jpg 768w" sizes="(max-width: 1400px) 100vw, 1400px" />        </div>
+
+        <div class="pt-blog-contain">
+         <div class="pt-post-meta">
+          <ul>
+           <li class="pt-post-author"><i class="fa fa-user"></i>admin</li>
+
+           <li class="pt-post-comment">
+                        <a href="man-therefore-always-holds-in-these-matters-to-this-principle/index.html"><i class="fa fa-comments"></i>1 Comment</a>
+          </li>
+        </ul>
+      </div>
+
+      <h5 class="pt-blog-title"><a href="man-therefore-always-holds-in-these-matters-to-this-principle/index.html">man therefore always holds in these matters to this principle</a></h5>
+
+      <div class="pt-blog-info">
+             </div>
+     
+
+  </div>
+</div>
+
+
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</div>
+					</div>
+		</div>
+							</div>
+		</div>
+							</div>
+			</div><!-- .entry-content -->
+</article><!-- #post-36 -->
+
+		</div><!-- .container -->
+
+	</main><!-- #main -->
+
+</div><!-- #primary -->
+
+</div>
+
+  </div><!-- #content -->
+	<!-- Footer start -->
+  
+
+ 
+<footer id="pt-footer">
+  		<div class="pt-footer-style-1">
+       
+                <div class="pt-footer-top">
+            <div class="pt-footer-logo-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                                                            <div class="pt-footer-img">
+                                    <img src="/website/wp-content/uploads/2022/08/logo-1.png" alt="footer-logo">
+                                </div>
+                                                                    <div class="pt-footer-description">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized.</p>
+                                    </div>
+                                                                <div class="pt-footer-right">
+                                <ul>
+                                                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                                                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                                                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                                                                <div class="col-lg-3 col-md-6">
+                                        				<div class="widget widget-port-1">
+					<h4 class="footer-title">Get Free Estimate</h4>					<div class="row">
+						<div class="col-sm-12">
+							<ul class="pt-contact">
+																		<li class="pt-footer-phone">
+											<i class="fas fa-phone"></i><a href="tel:+1800001658">
+												<span>+1800-001-658</span>
+											</a>
+										</li>
+																			<li class="pt-footer-desc">
+											<span>There are many variations of passages Lorem Ipsum available, but the of majoritystr have suffered </span>
+										</li>
+																			<li class="pt-footer-email">
+											<i class="fas fa-envelope"></i><a href="mailto:Info@Peacefulthemes.Com"><span>Info@Peacefulthemes.Com</span></a>
+										</li>
+									
+							</ul>
+						</div>
+					</div>
+				</div>
+				                                    </div> 
+                                    <div class="col-lg-3  col-md-6">
+                                        <div class="widget"><h4 class="footer-title">Our Services</h4><div class="menu-service-menu-container"><ul id="menu-service-menu" class="menu"><li id="menu-item-1921" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1921"><a href="our-services/index.html">Room cleaning</a></li>
+<li id="menu-item-1922" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1922"><a href="about-us/index.html">Advanced Analytic</a></li>
+<li id="menu-item-1923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1923"><a href="special-offers/index.html">Pick up &#038; Drop</a></li>
+<li id="menu-item-1924" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1924"><a href="room/our-family-room-2/index.html">Swimming Pool</a></li>
+<li id="menu-item-1925" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1925"><a href="restaurant/index.html">Testy BreakFast</a></li>
+</ul></div></div>                                    </div> 
+                                    <div class="col-lg-3  col-md-6">
+                                        <div class="widget"><h4 class="footer-title">Usefull link</h4><div class="menu-useful-links-container"><ul id="menu-useful-links" class="menu"><li id="menu-item-1926" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1926"><a href="about-us/index.html">About Us</a></li>
+<li id="menu-item-1927" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1927"><a href="rooms-grid-style-1/index.html">Hotel Room</a></li>
+<li id="menu-item-1928" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1928"><a href="special-offers/index.html">Special Offer</a></li>
+<li id="menu-item-1929" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1929"><a href="our-gallery/index.html">Our Gallery</a></li>
+<li id="menu-item-1930" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1930"><a href="contact-us/index.html">Contact Us</a></li>
+</ul></div></div>                                    </div>
+                                    <div class="col-lg-3  col-md-6">
+                                        
+		<div class="pt-widget-menu widget">
+
+			<h4 class="footer-title">Recent Posts</h4>
+			
+				<div class="pt-foote-recent-post">
+
+					<div class="pt-foote-recent-post-media">
+
+						<a href="richard-mcclintock-a-latin-professor-at-sydney-college/index.html">
+
+							<img src="/website/wp-content/uploads/2022/07/1-6-100x100.jpg" alt=""></a>
+
+						</div>
+
+						<div class="pt-foote-recent-post-info">
+
+							
+							<h6><a href="richard-mcclintock-a-latin-professor-at-sydney-college/index.html">Richard McClintock, a Latin professor at -Sydney College</a></h6>
+
+							<a href="2022/07/27/index.html" class="pt-post-date">July <span>27</span>, 2022 </a>
+
+						</div>
+
+
+
+					</div>
+
+					
+				<div class="pt-foote-recent-post">
+
+					<div class="pt-foote-recent-post-media">
+
+						<a href="contrary-to-popular-belief-em-ipsum-is-not-simply-random/index.html">
+
+							<img src="/website/wp-content/uploads/2022/07/2-5-100x100.jpg" alt=""></a>
+
+						</div>
+
+						<div class="pt-foote-recent-post-info">
+
+							
+							<h6><a href="contrary-to-popular-belief-em-ipsum-is-not-simply-random/index.html">Contrary to popular belief, em Ipsum is not simply random</a></h6>
+
+							<a href="2022/07/27/index.html" class="pt-post-date">July <span>27</span>, 2022 </a>
+
+						</div>
+
+
+
+					</div>
+
+					
+			</div>
+
+			                                    </div>
+                                                            </div>
+                    </div>
+                </div>
+                
+<div class="pt-copyright-footer">
+	<div class="container">
+		<div class="row">	
+			<div class="col-md-12 text-center">		
+								<span class="pt-copyright">Copyright 2022 Hotelzo All Rights Reserved.</span>				
+								
+			</div>				
+			
+		</div>
+	</div>
+	
+</div>            </div>
+       
+</footer>
+  <!-- Footer stop-->
+
+    </div><!-- .site-content-contain -->
+  </div> <!-- Peaceful themes -->
+</div><!-- #page -->
+
+
+	<!-- === back-to-top === -->
+	<div id="back-to-top">
+		<a class="top" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+	</div>
+	<!-- === back-to-top End === -->
+
+
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400%7CJost:500%7CCormorant+Garamond:600&amp;display=swap" rel="stylesheet" property="stylesheet" media="all" >
+
+<script>
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='/website/wp-content/plugins/revslider/public/assets/css/rs6b02e.css?ver=6.5.25' media='all' />
+<style id='rs-plugin-settings-inline-css'>
+		#rev_slider_5_1_wrapper .metis.tparrows{background:rgba(255,255,255,0.7); padding:10px; transition:all 0.3s; -webkit-transition:all 0.3s; width:60px; height:60px; box-sizing:border-box}#rev_slider_5_1_wrapper .metis.tparrows.rs-touchhover{background:#ffffff}#rev_slider_5_1_wrapper .metis.tparrows:before{color:#000000;   transition:all 0.3s; -webkit-transition:all 0.3s}#rev_slider_5_1_wrapper .metis.tparrows.rs-touchhover:before{transform:scale(1.5)}#rev_slider_5_1_wrapper .hesperiden.tp-bullets{}#rev_slider_5_1_wrapper .hesperiden.tp-bullets:before{content:' ';position:absolute;width:100%;height:100%;background:transparent;padding:10px;margin-left:-10px;margin-top:-10px;box-sizing:content-box;  border-radius:8px}#rev_slider_5_1_wrapper .hesperiden .tp-bullet{width:12px;height:12px;position:absolute;background:#ffffff;   background:-moz-linear-gradient(top,#ffffff 0%,#ffffff 100%);   background:-webkit-linear-gradient(top,#ffffff 0%,#ffffff 100%);   background:-o-linear-gradient(top,#ffffff 0%,#ffffff 100%);   background:-ms-linear-gradient(top,#ffffff 0%,#ffffff 100%);   background:linear-gradient(to bottom,#ffffff 0%,#ffffff 100%);   filter:progid:dximagetransform.microsoft.gradient(   startcolorstr='#ffffff',endcolorstr='#ffffff',gradienttype=0 ); border:0px solid #e5e5e5;border-radius:50%;cursor:pointer;box-sizing:content-box}#rev_slider_5_1_wrapper .hesperiden .tp-bullet.rs-touchhover,#rev_slider_5_1_wrapper .hesperiden .tp-bullet.selected{background:#00a9ae}#rev_slider_5_1_wrapper .hesperiden .tp-bullet-image{}#rev_slider_5_1_wrapper .hesperiden .tp-bullet-title{}
+</style>
+<script src='/website/wp-includes/js/dist/vendor/regenerator-runtime.min3937.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+<script src='/website/wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script id='contact-form-7-js-extra'>
+var wpcf7 = {"api":{"root":"https:\/\/hotelzo.peacefulqode.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+</script>
+<script src='/website/wp-content/plugins/contact-form-7/includes/js/index4c7e.js?ver=5.6.2' id='contact-form-7-js'></script>
+<script src='/website/wp-content/plugins/hotelzo-core/public/js/vendor/owl.carousel.min531b.js?ver=2.3.4' id='owl-carousel-js'></script>
+<script src='/website/wp-content/plugins/revslider/public/assets/js/rbtools.min8331.js?ver=6.5.18' defer async id='tp-tools-js'></script>
+<script src='/website/wp-content/plugins/revslider/public/assets/js/rs6.minb02e.js?ver=6.5.25' defer async id='revmin-js'></script>
+<script src='/website/wp-content/themes/hotelzo/assets/js/bootstrap.mina352.js?ver=4.1.3' id='bootstrap-js'></script>
+<script src='/website/wp-content/themes/hotelzo/assets/js/script5152.js?ver=1.0' id='hotelzo-script-js'></script>
+<script src='/website/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min3958.js?ver=0.2.1' id='jquery-numerator-js'></script>
+<script src='/website/wp-content/plugins/elementor/assets/js/webpack.runtime.minf43b.js?ver=3.7.1' id='elementor-webpack-runtime-js'></script>
+<script src='/website/wp-content/plugins/elementor/assets/js/frontend-modules.minf43b.js?ver=3.7.1' id='elementor-frontend-modules-js'></script>
+<script src='/website/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='/website/wp-includes/js/jquery/ui/core.min0028.js?ver=1.13.1' id='jquery-ui-core-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.7.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/hotelzo.peacefulqode.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":36,"title":"Hotelzo%20%E2%80%93%20Luxury%20Hotel%20WordPress%20Theme","excerpt":"","featuredImage":false}};
+</script>
+<script src='/website/wp-content/plugins/elementor/assets/js/frontend.minf43b.js?ver=3.7.1' id='elementor-frontend-js'></script>
+<script id="rs-initialisation-scripts">
+		var	tpj = jQuery;
+
+		var	revapi5;
+
+		if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+		if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+		RS_MODULES.modules["revslider51"] = {once: RS_MODULES.modules["revslider51"]!==undefined ? RS_MODULES.modules["revslider51"].once : undefined, init:function() {
+			window.revapi5 = window.revapi5===undefined || window.revapi5===null || window.revapi5.length===0  ? document.getElementById("rev_slider_5_1") : window.revapi5;
+			if(window.revapi5 === null || window.revapi5 === undefined || window.revapi5.length==0) { window.revapi5initTry = window.revapi5initTry ===undefined ? 0 : window.revapi5initTry+1; if (window.revapi5initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider51"].init()}); return;}
+			window.revapi5 = jQuery(window.revapi5);
+			if(window.revapi5.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_5_1"); return;}
+			revapi5.revolutionInit({
+					revapi:"revapi5",
+					DPR:"dpr",
+					sliderLayout:"fullwidth",
+					visibilityLevels:"1240,1024,778,480",
+					gridwidth:"1240,1024,778,480",
+					gridheight:"900,768,550,400",
+					lazyType:"smart",
+					perspective:600,
+					perspectiveType:"global",
+					editorheight:"900,768,550,400",
+					responsiveLevels:"1240,1024,778,480",
+					progressBar:{disableProgressBar:true},
+					navigation: {
+						wheelCallDelay:1000,
+						onHoverStop:false,
+						arrows: {
+							enable:true,
+							style:"metis",
+							hide_onmobile:true,
+							hide_under:"1399px",
+							hide_onleave:true,
+							animSpeed:"500ms",
+							animDelay:"500ms",
+							left: {
+								h_offset:30
+							},
+							right: {
+								h_offset:30
+							}
+						},
+						bullets: {
+							enable:true,
+							tmp:"",
+							style:"hesperiden",
+							hide_over:"1399px"
+						}
+					},
+					viewPort: {
+						global:true,
+						globalDist:"-200px",
+						enable:false
+					},
+					fallbacks: {
+						allowHTML5AutoPlayOnAndroid:true
+					},
+			});
+			
+		}} // End of RevInitScript
+
+		if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+	</script>
+</body>
+
+<!-- Mirrored from hotelzo.peacefulqode.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Aug 2022 07:25:31 GMT -->
+</html>

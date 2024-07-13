@@ -1,0 +1,53 @@
+﻿@model IEnumerable<SK_PG_WebApp.Models.BusinessModels.PGMasterBO>
+@{
+    ViewData["Title"] = "Property Dashboard";
+    Layout= "_LayoutUI2";
+}
+
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card">
+        <div class="card-body row">
+          <div class="col-5 text-center d-flex align-items-center justify-content-center">
+            <div class="">
+              <h2><strong>@ViewBag.name</strong></h2>
+              <p class="lead mb-5">@ViewBag.address<br>
+                Phone: @ViewBag.number
+              </p>
+            </div>
+          </div>
+          <div class="col-7">
+          
+
+           <form class="form-horizontal" enctype="multipart/form-data" method="post">
+                             <input type="text" id="userid" name="userid" style="display:none" value="@ViewBag.userid" class="form-control" />
+
+            <div class="form-group">
+              <label for="inputName">Name</label>
+              <input type="text" required id="name" name="name" value="@ViewBag.name" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">E-Mail</label>
+              <input type="email" required id="email" name="email" value="@ViewBag.email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="inputSubject">Last Date</label>
+              <input type="date" required id="dateip" value="@ViewBag.lastdate" name="dateip" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="inputMessage">Reason</label>
+              <textarea id="reason" required name="reason" class="form-control" rows="4"> @ViewBag.reason </textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="Add To Notice">
+            </div>
+
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+
+    </section>

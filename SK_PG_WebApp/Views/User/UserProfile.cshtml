@@ -1,0 +1,275 @@
+﻿@model IEnumerable<SK_PG_WebApp.Models.DynamicModels.UserProfileDC>
+@{
+    ViewData["Title"] = "User List";
+    Layout= "_LayoutUI2";
+}
+
+
+ <div class="row" style="margin:10px">
+
+
+      @foreach (var item in Model){
+          <div class="col-md-3">
+
+            <!-- Profile Image -->
+            <div class="card card-primary card-outline">
+
+              <div class="card-body box-profile">
+
+                   <div class="text-center">
+                  <img class="profile-user-img img-fluid img-circle"
+                       src= @item.imageURL
+                       alt="User profile picture">
+                </div>
+
+               
+                <h3 class="profile-username text-center">@item.name</h3>
+
+                <p class="text-muted text-center">@item.qualification</p>
+
+                 <ul class="list-group list-group-unbordered mb-3">
+                  <li class="list-group-item">
+                    <b>Aadhar </b> <a class="float-right"> @item.adhar </a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>PAN </b> <a class="float-right">@item.pan</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>DOB</b> <a class="float-right">@item.dob</a>
+                  </li>
+                </ul>
+
+                <hr>
+
+                 <strong><i class="fas fa-book mr-1"></i> Education</strong>
+
+                <p class="text-muted">
+                  @item.education
+                </p>
+
+                <hr>
+
+                <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
+
+                <p class="text-muted"> @item.location
+                </p>
+
+                <hr>
+
+                <strong><i class="fas fa-person-alt mr-1"></i> Refered By</strong>
+
+                <p class="text-muted">
+                  <span class="tag tag-danger">@item.referByUser</span>
+                  
+                </p>
+
+                @*<hr>*@
+
+              
+                 @*
+                        <button type="button`" asp-area="" asp-controller="User" asp-action="PayingGuestRoomMapping" asp-route-id="@item.userId"
+                          class="btn btn-info">Map New Room</button>
+                  *@
+            
+
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+           
+          </div>
+          <!-- /.col -->
+          <div class="col-md-9">
+            <div class="card">
+                <form class="form-horizontal" method="post">
+              <div class="card-header p-2">
+                <ul class="nav nav-pills">
+                  <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Educational Details</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Business Details</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Personal Details</a></li>
+                  @*<li class="nav-item"><a class="nav-link" href="#pg" data-toggle="tab">PG Details</a></li>*@
+                </ul>
+              </div><!-- /.card-header -->
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="active tab-pane" id="activity">
+                  <div class="form-group row">
+                        <label for="inputName" class="col-sm-4 col-form-label">Qualification</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="qualification" value="@item.qualification" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-4 col-form-label">Eduation</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="education" value="@item.education" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputName2" class="col-sm-4 col-form-label">Contact Number</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="contactNumber" value="@item.contactNumber" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputExperience" class="col-sm-4 col-form-label">WhatsApp Number</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" name="whatsAppNumber" value="@item.whatsAppNumber"></input>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputSkills" class="col-sm-4 col-form-label">Email</label>
+                        <div class="col-sm-6">
+                          <input type="email" class="form-control" name="email" id="email" value="@item.email">
+                        </div>
+                      </div>
+                      
+                  </div>
+                  <!-- /.tab-pane -->
+                  <div class="tab-pane" id="timeline">
+                   <div class="form-group row">
+                        <label for="inputName" class="col-sm-4 col-form-label">Joined As</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="designation" value="@item.designation" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-4 col-form-label">Role</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="role" value="@item.role" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputName2" class="col-sm-4 col-form-label">Onboarding Date</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" readonly name="createdDate"  value="@item.createdDate" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputExperience" class="col-sm-4 col-form-label">Last Login Date</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="lastLoginDate"  value="@item.lastLoginDate"></input>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputSkills" class="col-sm-4 col-form-label">UserId</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" readonly name="userId"  value="@item.userId">
+                        </div>
+                      </div>
+                      
+                  </div>
+                  <!-- /.tab-pane -->
+
+                  <div class="tab-pane" id="settings">
+                    
+                      <div class="form-group row">
+                        <label for="inputName" class="col-sm-4 col-form-label">DOB</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control"  value="@item.dob" name="dob" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-4 col-form-label">Family Emergency Number </label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="familycontactNumber" value="@item.familyContactNumber" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-4 col-form-label">Family Member</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="familyMember" value="@item.familyMember" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputName2" class="col-sm-4 col-form-label">Permanant Address</label>
+                        <div class="col-sm-6">
+                          <textarea type="text" class="form-control" name="address" value="@item.address" > @item.address</textarea>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputExperience" class="col-sm-4 col-form-label">Location</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="location" value="@item.location"></input>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputExperience" class="col-sm-4 col-form-label">Aadhar</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="adhar" value="@item.adhar"></input>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputExperience" class="col-sm-4 col-form-label">PAN</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="pan" value="@item.pan"></input>
+                        </div>
+                      </div>
+                     
+                      
+                      
+                    
+                  </div>
+                  <div class="tab-pane" id="pg">
+                    
+                      <div class="form-group row">
+                        <label for="inputName" class="col-sm-4 col-form-label">City</label>
+                        <div class="col-sm-6">
+                          <input type="text" readonly class="form-control"  value="@item.cityName" name="city" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-4 col-form-label"> Property Name </label>
+                        <div class="col-sm-6">
+                          <input type="text" readonly class="form-control" name="propertyName" value="@item.propertyName" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-4 col-form-label">Room No</label>
+                        <div class="col-sm-6">
+                          <input type="text" readonly class="form-control" name="roomName" value="@item.roomName" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputName2" class="col-sm-4 col-form-label">Deposit</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="deposit" value="@item.deposit" >
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputExperience" class="col-sm-4 col-form-label">Rent</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="rent" value="@item.rent"></input>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                      
+                        <div class="col-sm-6">
+                        </div>
+                        <div class="col-sm-6">
+                       @*   <button type="submit" asp-area="" asp-controller="User" asp-action="PayingGuestRoomMapping" asp-route-id="@item.userId"
+                          class="btn btn-info">Map New Room</button>*@
+                        </div>
+                      </div>
+
+                    
+                  </div>
+                  <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+              </div><!-- /.card-body -->
+              
+                <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-6">
+                          <button type="submit" class="btn btn-danger">Submit</button>
+                        </div>
+                </div>
+              </form>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+
+          }
+        </div>

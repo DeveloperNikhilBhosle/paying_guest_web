@@ -1,0 +1,180 @@
+﻿@model SK_PG_WebApp.Models.DynamicModels.AddUpdatePropertyDC
+
+@{
+    ViewData["Title"] = "EditProperty";
+    Layout = "~/Views/Shared/_LayoutUI2.cshtml";
+}
+
+ <div class="col-sm-6" style="margin:10px">
+     
+   <h6>Add PG Location</h6>
+          </div>
+          <form method="post" asp-action="AddUpdateProperty">
+
+
+
+      <div class="row" style="margin:10px">
+        <div class="col-md-6">
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Property Details</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+
+                
+              <div class="form-group">
+                <label for="inputName">Property Name</label>
+                <input type="text" id="inputName" asp-for="propertyName" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="inputDescription">Description</label>
+                <textarea id="inputDescription" class="form-control" name="propertyDescription" asp-for="propertyDescription" rows="4"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="inputStatus">State</label>
+                  @Html.DropDownList("state",(IEnumerable<SelectListItem>)ViewBag.State , new { 
+                      @class = "form-control", @id = "state", @name = "state" 
+                        
+                  })
+
+@*
+                <select id="inputStatus" class="form-control custom-select">
+                  <option disabled>Select one</option>
+                  <option>Maharashtra</option>
+                  <option>Canceled</option>
+                  <option selected>Success</option>
+                </select>*@
+              </div>
+              <div class="form-group">
+                <label for="inputStatus">City</label>
+                @Html.DropDownList("city",(IEnumerable<SelectListItem>)ViewBag.City , new { 
+                      @class = "form-control", @id = "city", @name = "city" 
+                        
+                  })
+             @*   <select id="inputStatus" name="city" class="form-control custom-select">
+                  <option disabled>Select one</option>
+                  <option>Thane</option>
+                  <option>Canceled</option>
+                  <option selected>Success</option>
+                </select>*@
+              </div>
+              <div class="form-group">
+                <label for="inputStatus">Location</label>
+                @Html.DropDownList("location",(IEnumerable<SelectListItem>)ViewBag.Location , new { 
+                      @class = "form-control", @id = "location", @name = "location" 
+                        
+                  })
+               @* <select id="inputStatus" name="" class="form-control custom-select">
+                  <option disabled>Select one</option>
+                  <option>Ghodbandar Road</option>
+                  <option>Canceled</option>
+                  <option selected>Success</option>
+                </select>*@
+              </div>
+              
+
+            
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <div class="col-md-6">
+          <div class="card card-secondary">
+            <div class="card-header">
+              <h3 class="card-title">Property Owner Details</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              
+              <div class="form-group">
+                <label for="inputSpentBudget">Full Name</label>
+                <input type="text" id="inputSpentBudget" asp-for="ownerDetails.fullName" class="form-control" value="" step="1">
+              </div>
+              <div class="form-group">
+                <label for="inputEstimatedDuration">Contact Number</label>
+                <input type="number" id="inputEstimatedDuration" asp-for="ownerDetails.contactNumber" class="form-control" value="" step="0.1">
+              </div>
+              <div class="form-group">
+                <label for="inputSpentBudget">Permanent Address</label>
+                <textarea id="inputSpentBudget" class="form-control" asp-for="ownerDetails.address" name="address" value="" step="1">
+                    
+                </textarea>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+          <div class="card card-info">
+            <div class="card-header">
+              <h3 class="card-title">Map / UnMap Rooms</h3>
+
+              <div class="card-tools">
+             @*   <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                  <i class="fas fa-minus"></i>
+                </button>*@
+                   <button type="button" class="btn btn-info" onclick="onCickAddButton()" title="add">
+                  <i class="fa-solid fa-square-plus"></i> Add
+                </button>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Room No</th>
+                    <th>PG Capacity</th>
+                    <th>Active PG</th>
+                    <th>Pending PG</th>
+                    <th>Deposit</th>
+                    <th>Rent</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                         <td colspan="7">
+                             <h6><b>NO PG Rooms Available</b></h6> 
+                         </td>
+                     </tr>
+
+                  </tbody>
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <div class="row" style="margin:10px">
+        <div class="col-12">
+          <a href="#" class="btn btn-secondary">Cancel</a>
+          <input type="submit" value="Save Changes" class="btn btn-success float-right">
+        </div>
+      </div>
+      
+      </form>
+    <script>
+        function onCickAddButton(){
+          
+            alert("Hello");
+
+            var data = @ViewBag.AddRooms;
+            console.log(data, "data");
+            var newData = data[0];
+            console.log(newData, "newData");
+           
+        }
+
+    </script>

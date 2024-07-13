@@ -1,0 +1,76 @@
+﻿@model IEnumerable<SK_PG_WebApp.Models.BusinessModels.PGMasterBO>
+@{
+    ViewData["Title"] = "Property Dashboard";
+    Layout= "_LayoutUI2";
+}
+
+
+<div class="row" style="margin:10px">
+
+    @foreach(var item in Model)
+    {
+            <div class="col-md-4">
+            <!-- Widget: user widget style 2 -->
+            <div class="card " style=" background: #ffc107">
+              <!-- Add the bg color to the header using any of the bg-* classes -->
+
+            
+              <div asp-controller="Property" asp-action="PropertyDetailsDashboard" asp-route-propertyId="@item.id" class="widget-user-header bg-warning" style="height:80px; overflow:auto; margin: 10px;" >
+                  <a class="float-right badge bg-primary btn" style="margin-left: 5px; color: white !important" 
+                     asp-area="" asp-controller="Property" asp-action="EditProperty" asp-route-id="@item.id"
+                  > View/Edit Details </a>  
+                  <a class="float-right badge bg-primary btn" style="margin-left: 5px; color: white !important" 
+                     asp-area="" asp-controller="Property" asp-action="PropertyDetailsDashboard" asp-route-propertyId="@item.id"
+                  > Dashboard </a> 
+
+            @*      <a asp-area="" asp-controller="User" asp-action="Users" asp-route-id="1" class="float-right badge bg-primary btn">
+                  <p>Super Admins</p>
+                </a>*@
+
+                <!-- /.widget-user-image -->
+                <h6 class="widget-user-desc">@item.name</h6>
+                @*<h6 class="widget-user-desc">Ghodbandar Road, Thane West, Maharashtra</h6>*@
+              </div>
+              <div class="card-footer p-0" style="background:#fff">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Total Rooms 
+                      
+                      <span class="float-right badge" style="background:skyblue; color: black; margin-left: 5px;"> Boys:  @item.noOfBoysRooms </span>
+                      <span class="float-right badge" style="background:lightpink; color: black; margin-left: 5px;"> Girls:  @item.noOfGirlsRooms </span>
+                  <span class="float-right badge bg-primary" style="margin-left: 5px;"> Total:  @item.noOfRooms </span>  
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Booked 
+                      <span class="float-right badge" style="background:skyblue; color: black; margin-left: 5px;"> Boys :  @item.noOfRoomsBookedBoys </span>
+                      <span class="float-right badge" style="background:lightpink; color: black; margin-left: 5px;"> Girls :  @item.noOfRoomsBookedGirls </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Available  
+                      <span class="float-right badge" style="background:skyblue; color: black; margin-left: 5px;"> Boys : @item.noOfRoomsAvailableBoys </span>
+                      <span class="float-right badge" style="background:lightpink; color: black; margin-left: 5px;"> Girls : @item.noOfRoomsAvailableGirls </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Partially Booked  
+                      <span class="float-right badge" style="background:skyblue; color: black; margin-left: 5px;"> Boys :  @item.partiallyBookedBoys </span>
+                      <span class="float-right badge" style="background:lightpink; color: black; margin-left: 5px;"> Girls :  @item.partiallyBookedGirls </span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+            <!-- /.widget-user -->
+          </div>
+    }
+
+
+
+</div>
