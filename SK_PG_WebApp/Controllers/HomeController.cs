@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 namespace SK_PG_WebApp.Controllers
 {
     [Authorize]
-    public class HomeController : Controller
+    public class HomeController : Controller 
     {
         private readonly ILogger<HomeController> _logger;
         private readonly DatabaseContext dbContext;
